@@ -36,7 +36,7 @@ git clone https://github.com/putrialuthfi/Cut-Nyak-Dien-Repository.git
 1. Buka GIT Bash di Folder dimana kalian melakukan clone repository.
 2. Ketik teks berikut ini di GIT Bash:
 git add -A
-git commit  -m "tulis apa yang kalian edit/update/delete dan sebagainya"
+git commit -m "tulis apa yang kalian edit/update/delete dan sebagainya (NAMA KALIAN)"
 git push -u origin main
 ```
 
