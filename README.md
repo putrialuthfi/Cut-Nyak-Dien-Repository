@@ -12,6 +12,12 @@ https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview ha
 - [ ] Article Page
 - [ ] About Us Page
 - [ ] Pop-up Profil Tenaga Kesehatan
+- [ ] Profil Admin
+- [ ] Form input jadwal posyandu
+- [ ] Form input child monitoring
+- [ ] Form input artikel
+- [ ] Profil Orangtua
+- [ ] Profil Anak
 
 ## HOW TO CLONE REPOSITORY
 ```bash
