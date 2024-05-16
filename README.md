@@ -33,5 +33,5 @@ https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview ha
 2. Ketik teks berikut ini di GIT Bash:
 git add -A
 git commit  -m "tulis apa yang kalian edit/update/delete dan sebagainya"
-git push -u origin master
+git push -u origin main
 ```
