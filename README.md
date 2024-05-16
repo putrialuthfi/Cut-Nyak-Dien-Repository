@@ -18,4 +18,14 @@ https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview ha
 1. Buat Folder baru di direktori manapun yang kalian mau.
 2. Buka GIT Bash di Folder yang telah kalian buat.
 3. Ketik teks berikut ini di GIT Bash: git clone https://github.com/putrialuthfi/Cut-Nyak-Dien-Repository.git
-4. Done.```
+4. Done.
+```
+
+## HOW TO UPLOAD AN UPDATE
+```bash
+1. Buka GIT Bash di Folder dimana kalian melakukan clone repository.
+2. Ketik teks berikut ini di GIT Bash:
+git add -A
+git commit  -m "tulis apa yang kalian upload"
+git push -u origin master
+```
