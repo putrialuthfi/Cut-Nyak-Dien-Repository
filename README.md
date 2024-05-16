@@ -1,5 +1,9 @@
 ## IMPORTANT ANNOUNCEMENT
 https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview hasil codingan
+```bash
+HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU
+SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
+```
 
 ## TO-DO LIST
 - [ ] Homepage
