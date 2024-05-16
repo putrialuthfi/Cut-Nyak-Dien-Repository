@@ -39,3 +39,6 @@ git add -A
 git commit  -m "tulis apa yang kalian edit/update/delete dan sebagainya"
 git push -u origin main
 ```
+
+## MORE INFORMATION ABOUT GITHUB COLLABORATION
+https://medium.com/@bayupaoh/kolaburasi-code-dengan-git-dan-github-1-79e19e553f85
