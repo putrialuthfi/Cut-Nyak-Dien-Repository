@@ -6,9 +6,9 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 
 ## TO-DO LIST
 - [ ] Homepage
-- [ ] Sign In Page ( Riska ) 
+- [ ] Sign In Page (Riska) 
 - [ ] Sign Up Page
-- [ ] Informasi Posyandu Page
+- [ ] Informasi Posyandu Page (Luthfi)
 - [ ] Stunting Detection Page
 - [ ] Monitoring Record Page
 - [ ] Forum Discussion Page
