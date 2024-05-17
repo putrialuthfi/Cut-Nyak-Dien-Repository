@@ -8,7 +8,8 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] Homepage
 - [ ] Sign In Page (Riska) 
 - [ ] Sign Up Page
-- [ ] Informasi Posyandu Page (Luthfi)
+- [ ] Informasi Posyandu Page 1 (Luthfi)
+- [ ] Informasi Posyandu Page 2 (Luthfi)
 - [ ] Stunting Detection Page
 - [ ] Monitoring Record Page
 - [ ] Forum Discussion Page
