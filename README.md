@@ -17,7 +17,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] About Us Page
 - [ ] Pop-up Profil Tenaga Kesehatan
 - [ ] Profil Admin
-- [ ] Form Input Jadwal Posyandu
+- [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Form Input Child Monitoring
 - [ ] Form Input Artikel
 - [ ] Profil Orangtua
