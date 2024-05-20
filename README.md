@@ -1,20 +1,21 @@
 ## IMPORTANT ANNOUNCEMENT
+
 https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview hasil codingan
 
 NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
 
-
 ## TO-DO LIST
+
 - [ ] Navbar & Footer
 - [ ] Homepage (Rangga)
 - [ ] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi)
 - [ ] Stunting Detection Page
 - [ ] Popup Stunting Detection
-- [ ] Article Page 1
-- [ ] Article Page 2
+- [ ] Article Page 1 (Wildan)
+- [ ] Article Page 2 (Wildan)
 - [ ] Tentang Kami (Syania)
-- [ ] Sign In Page (Riska) 
+- [ ] Sign In Page (Riska)
 - [ ] Sign Up Page
 - [ ] Profil Admin
 - [ ] Form Input Jadwal Posyandu (Luthfi)
@@ -31,8 +32,8 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] Page publish forum diskusi
 - [ ] Pop-up Profil Tenaga Kesehatan
 
-
 ## HOW TO CLONE REPOSITORY
+
 ```bash
 1. Buat Folder baru di direktori manapun yang kalian mau.
 2. Buka GIT Bash di Folder yang telah kalian buat.
@@ -42,6 +43,7 @@ git clone https://github.com/putrialuthfi/Cut-Nyak-Dien-Repository.git
 ```
 
 ## HOW TO UPLOAD AN UPDATE
+
 ```bash
 1. Buka GIT Bash di Folder dimana kalian melakukan clone repository.
 2. Ketik teks berikut ini di GIT Bash:
@@ -51,4 +53,5 @@ git push -u origin (nama branch lokasi filenya), cth: git push -u origin informa
 ```
 
 ## MORE INFORMATION ABOUT GITHUB COLLABORATION
+
 https://medium.com/@bayupaoh/kolaburasi-code-dengan-git-dan-github-1-79e19e553f85
