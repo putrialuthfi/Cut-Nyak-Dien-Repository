@@ -17,7 +17,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] Tentang Kami (Syania)
 - [ ] Sign In Page (Riska)
 - [ ] Sign Up Page
-- [ ] Profil Admin (Rendy)
+- [ ] Profil Admin 
 - [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
 - [ ] Form Child Monitoring
