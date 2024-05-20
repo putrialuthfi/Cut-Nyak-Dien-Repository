@@ -13,8 +13,8 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] Stunting Detection Page
 - [ ] Monitoring Record Page
 - [ ] Forum Discussion Page
-- [ ] Article Page
-- [ ] About Us Page
+- [ ] Article Page(syania)
+- [ ] About Us Page(syania)
 - [ ] Pop-up Profil Tenaga Kesehatan
 - [ ] Profil Admin
 - [ ] Form Input Jadwal Posyandu (Luthfi)
