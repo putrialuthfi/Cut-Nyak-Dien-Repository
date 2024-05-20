@@ -20,8 +20,8 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Form Input Child Monitoring
 - [ ] Form Input Artikel
-- [ ] Profil Orangtua
-- [ ] Profil Anak
+- [ ] Profil Orangtua (Satria)
+- [ ] Profil Anak (Satria
 
 ## HOW TO CLONE REPOSITORY
 ```bash
