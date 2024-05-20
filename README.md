@@ -1,8 +1,11 @@
 ## IMPORTANT ANNOUNCEMENT
+# React + Vite
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview hasil codingan
 
 NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
+Currently, two official plugins are available:
 
 ## TO-DO LIST
 
@@ -55,3 +58,7 @@ git push -u origin (nama branch lokasi filenya), cth: git push -u origin informa
 ## MORE INFORMATION ABOUT GITHUB COLLABORATION
 
 https://medium.com/@bayupaoh/kolaburasi-code-dengan-git-dan-github-1-79e19e553f85
+
+## TWO OFFICIAL PLUGINS AVAILABLE
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
