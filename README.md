@@ -5,7 +5,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 
 
 ## TO-DO LIST
-- [ ] Homepage
+- [ ] Homepage (Rangga)
 - [ ] Sign In Page (Riska) 
 - [ ] Sign Up Page
 - [ ] Informasi Posyandu Page 1 (Luthfi)
