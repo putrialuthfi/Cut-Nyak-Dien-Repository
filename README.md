@@ -10,14 +10,14 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM M
 - [ ] Homepage (Rangga)
 - [ ] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi)
-- [ ] Stunting Detection Page
-- [ ] Popup Stunting Detection
+- [ ] Stunting Detection Page (Rendy)
+- [ ] Popup Stunting Detection (Rendy)
 - [ ] Article Page 1 (Wildan)
 - [ ] Article Page 2 (Wildan)
 - [ ] Tentang Kami (Syania)
 - [ ] Sign In Page (Riska)
 - [ ] Sign Up Page
-- [ ] Profil Admin
+- [ ] Profil Admin (Rendy)
 - [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
 - [ ] Form Child Monitoring
