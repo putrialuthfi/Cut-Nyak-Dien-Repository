@@ -42,15 +42,15 @@ const Navbar = () => {
               src="src/assets/main-icon.png"
               alt="Main Icon"
             />
-            <img
+          </Link>
+          <img
               className="w-184 h-34"
               src="src/assets/main-text.png"
               alt="Main Text"
             />
-          </Link>
         </div>
         {/* Menu Items */}
-        <div className="hidden space-x-6 md:flex text-white font-semibold">
+        <div className="hidden space-x-6 md:flex text-white font-semibold ">
           <Link to="/" className="hover:text-darkGrayishBlue">
             Beranda
           </Link>
