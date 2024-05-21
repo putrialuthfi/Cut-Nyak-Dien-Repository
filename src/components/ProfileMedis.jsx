@@ -12,7 +12,7 @@ const Profile = () => {
                 <div className='rounded-xl shadow-lg'>
                     <div className=' flex flex-col h-[380px]'>
                         <div className='rounded-xl overflow-hidden'>
-                            <img class="w-270 h-240" src="src/assets/1.png"></img>
+                            <img className="w-270 h-240" src="src/assets/1.png"></img>
                         </div>
                         <h5 className='text-[23px] font-medium mt-3'>Kartika Ayu</h5>
                         <p className='text-slate-500 text-[15px]'>Posyandu Dahlia</p>
@@ -24,7 +24,7 @@ const Profile = () => {
                  <div className='rounded-xl shadow-lg'>
                     <div className=' flex flex-col h-[380px]'>
                         <div className='rounded-xl overflow-hidden'>
-                            <img class="w-270 h-240" src="src/assets/2.png"></img>
+                            <img className="w-270 h-240" src="src/assets/2.png"></img>
                         </div>
                         <h5 className='text-[23px] font-medium mt-3'>Laras Andini</h5>
                         <p className='text-slate-500 text-[15px]'>Posyandu Lili</p>
@@ -36,7 +36,7 @@ const Profile = () => {
                  <div className='rounded-xl shadow-lg'>
                     <div className=' flex flex-col h-[380px]'>
                         <div className='rounded-xl overflow-hidden'>
-                            <img class="w-270 h-240" src="src/assets/3.png"></img>
+                            <img className="w-270 h-240" src="src/assets/3.png"></img>
                         </div>
                         <h5 className='text-[23px] font-medium mt-3'>Wati Sucia</h5>
                         <p className='text-slate-500 text-[15px]'>Posyandu Melati</p>
@@ -48,7 +48,7 @@ const Profile = () => {
                 <div className='rounded-xl shadow-lg'>
                     <div className=' flex flex-col h-[380px]'>
                         <div className='rounded-xl overflow-hidden'>
-                            <img class="w-270 h-240" src="src/assets/4.png"></img>
+                            <img className="w-270 h-240" src="src/assets/4.png"></img>
                         </div>
                         <h5 className='text-[23px] font-medium mt-3'>Ghina Fathia</h5>
                         <p className='text-slate-500 text-[15px]'>Posyandu Mawar</p>

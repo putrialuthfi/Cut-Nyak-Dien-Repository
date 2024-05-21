@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar"
 import Home from './components/Home'
 import Layanan from "./components/Layanan"
@@ -7,16 +7,19 @@ import Informasi from './components/Informasi';
 import StuntingDetection from "./components/StuntingDetection"
 
 function App() {
-
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/stuntingDetection' element={<StuntingDetection />} />
+      </Routes>
       <Layanan />
       <Profile />
       <Informasi />
-    </BrowserRouter>
+    </Router>
   );
 }
 
-export default App
+
+export default App;

@@ -1,33 +1,99 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleLinkClick = () => {
+    setDropdownOpen(false);
+  };
+
+  // Close the dropdown if clicked outside
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        !event.target.closest(".dropdown-menu") &&
+        !event.target.closest(".dropdown-button")
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
   return (
-    <nav className='relative container py-1 md:px-10 px-7 bg-[#135D66]'>
+    <nav className="relative container py-1 md:px-10 px-7 bg-[#135D66]">
       {/* Flex Container */}
-      <div className='flex items-center justify-between'>
+      <div className="flex items-center justify-between">
         {/* Logo */}
-        <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-                <img class="w-66 h-75" src="src/assets/main-icon.png"></img>
-                <img class="w-184 h-34" src="src/assets/main-text.png"></img>
-            </div>
+        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
+          <Link to="/">
+            <img
+              className="w-66 h-75"
+              src="src/assets/main-icon.png"
+              alt="Main Icon"
+            />
+            <img
+              className="w-184 h-34"
+              src="src/assets/main-text.png"
+              alt="Main Text"
+            />
+          </Link>
+        </div>
         {/* Menu Items */}
-        <div className='hidden space-x-6 md:flex text-white font-semibold'>
-          <Link to='#' className='hover:text-darkGrayishBlue'>
+        <div className="hidden space-x-6 md:flex text-white font-semibold">
+          <Link to="/" className="hover:text-darkGrayishBlue">
             Beranda
           </Link>
-          <Link to='#' className='hover:text-darkGrayishBlue'>
-            Layanan
-          </Link>
-          <Link to='#' className='hover:text-darkGrayishBlue'>
+          <div className="relative">
+            <button
+              onClick={handleDropdownToggle}
+              className="hover:text-darkGrayishBlue dropdown-button"
+            >
+              Layanan
+            </button>
+            {dropdownOpen && (
+              <div className="absolute bg-white text-black mt-2 py-2 w-48 shadow-lg dropdown-menu">
+                <Link
+                  to="/stuntingDetection"
+                  onClick={handleLinkClick}
+                  className="block px-4 py-2 hover:bg-gray-200"
+                >
+                  Stunting Detection
+                </Link>
+                <Link
+                  to="/service2"
+                  onClick={handleLinkClick}
+                  className="block px-4 py-2 hover:bg-gray-200"
+                >
+                  Service 2
+                </Link>
+                <Link
+                  to="/service3"
+                  onClick={handleLinkClick}
+                  className="block px-4 py-2 hover:bg-gray-200"
+                >
+                  Service 3
+                </Link>
+              </div>
+            )}
+          </div>
+          <Link to="#" className="hover:text-darkGrayishBlue">
             Artikel
           </Link>
-          <Link to='#' className='hover:text-darkGrayishBlue'>
+          <Link to="#" className="hover:text-darkGrayishBlue">
             Tentang Kami
           </Link>
-          <Link to='#' className='hover:text-darkGrayishBlue'>
+          <Link to="#" className="hover:text-darkGrayishBlue">
             Masuk ke Akun
           </Link>
         </div>
