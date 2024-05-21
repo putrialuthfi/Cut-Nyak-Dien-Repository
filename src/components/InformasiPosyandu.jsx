@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ content }) => {
+const CardInformasiPsy = ({ content }) => {
   return (
     <div className="flex items-center justify-between w-full max-w-[1146px] h-[72px] p-6 bg-gray-100 rounded-[14px] shadow-md mb-4">
       <div className="text-gray-800">
@@ -13,4 +13,4 @@ const Card = ({ content }) => {
   );
 }
 
-export default Card;
+export default CardInformasiPsy;
