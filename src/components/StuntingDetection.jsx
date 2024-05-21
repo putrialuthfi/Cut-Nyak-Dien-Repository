@@ -1,18 +1,6 @@
 const StuntingDetection = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center">
-      <header className="w-full bg-white shadow p-4 flex justify-between items-center">
-        <div className="text-xl font-bold">Posyandu-Online</div>
-        <div className="flex items-center">
-          <span className="mr-4">Halo, Admin</span>
-          <img
-            src="path/to/profile-pic.jpg"
-            alt="Admin"
-            className="w-10 h-10 rounded-full"
-          />
-        </div>
-      </header>
-
       <main className="flex flex-col md:flex-row mt-8 w-full max-w-6xl bg-white rounded-lg overflow-hidden">
         <div className="md:w-1/2 p-6 flex items-center justify-center sm:hidden md:block">
           <img
@@ -153,74 +141,7 @@ const StuntingDetection = () => {
           </div>
         </div>
       </main>
-      <footer className="w-full bg-gray-800 text-white p-4 flex justify-between items-center mt-8">
-        <div>
-          <h3 className="font-bold">Informasi</h3>
-          <ul>
-            <li>
-              <a href="#" className="hover:underline">
-                Tentang Kami
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Layanan
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-bold">Layanan</h3>
-          <ul>
-            <li>
-              <a href="#" className="hover:underline">
-                Informasi Posyandu
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Stunting Detection
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Child Monitoring Record
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-bold">Kontak</h3>
-          <ul>
-            <li>
-              <a href="tel:+628956001321" className="hover:underline">
-                +62 895 6001 321
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tiktok.com/@eposyandu_line"
-                className="hover:underline"
-              >
-                @eposyandu_line
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:eposyandu_line@gmail.com"
-                className="hover:underline"
-              >
-                eposyandu_line@gmail.com
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      
     </div>
   );
 };
