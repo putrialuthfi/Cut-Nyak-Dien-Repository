@@ -19,7 +19,7 @@ Currently, two official plugins are available:
 - [ ] Article Page 2 (Wildan)
 - [ ] Tentang Kami (Syania)
 - [ ] Sign In Page (Riska)
-- [ ] Sign Up Page (Adisty)
+- [ ] Sign Up Page
 - [ ] Profil Admin 
 - [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
