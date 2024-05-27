@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 - [x] Navbar & Footer (Rangga)
 - [x] Homepage (Rangga) On Progress 💪
-- [ ] Informasi Posyandu Page 1 (Luthfi)
+- [x] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi)
 - [ ] Stunting Detection Page (Rendy)
 - [ ] Popup Stunting Detection (Rendy)
