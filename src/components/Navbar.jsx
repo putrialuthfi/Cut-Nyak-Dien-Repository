@@ -71,11 +71,11 @@ const Navbar = () => {
                   Stunting Detection
                 </Link>
                 <Link
-                  to="/service2"
+                  to="/informasiPosyandu"
                   onClick={handleLinkClick}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
-                  Service 2
+                  Informasi Posyandu
                 </Link>
                 <Link
                   to="/service3"

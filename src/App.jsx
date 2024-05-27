@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar"
 import Home from './components/Home'
 import StuntingDetection from "./components/StuntingDetection"
+import InformasiPosyandu from "./components/InformasiPosyandu"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/stuntingDetection' element={<StuntingDetection />} />
+        <Route path='/informasiPosyandu' element={<InformasiPosyandu />} />
       </Routes>
     </Router>
   );
