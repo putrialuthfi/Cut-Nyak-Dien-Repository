@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const CardInformasiPsy = ({ content }) => {
   return (
@@ -7,14 +7,16 @@ const CardInformasiPsy = ({ content }) => {
       <div className="text-gray-800">
         {content}
       </div>
-      <button className="px-4 py-2 bg-[#135D66] text-white rounded-[14px] hover:bg-opacity-90">
-        Lihat Selengkapnya
-      </button>
+      <Link to="/informasiPosyandu2">
+        <button className="px-4 py-2 bg-[#135D66] text-white rounded-[14px] hover:bg-opacity-90">
+          Lihat Selengkapnya
+        </button>
+      </Link>
     </div>
   );
 };
 
-function InformasiPosyandu() {
+function App() {
   const cardContents = [
     "Posyandu Dahlia 1",
     "Posyandu Dahlia 2",
@@ -38,4 +40,4 @@ function InformasiPosyandu() {
   );
 }
 
-export default InformasiPosyandu;
+export default App;
