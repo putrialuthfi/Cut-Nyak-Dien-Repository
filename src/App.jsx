@@ -4,6 +4,7 @@ import Home from './components/Home'
 import StuntingDetection from "./components/StuntingDetection"
 import InformasiPosyandu from "./components/InformasiPosyandu"
 import InformasiPosyandu2 from "./components/InformasiPosyandu2"
+import SignUp from "./components/SignUp"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/stuntingDetection' element={<StuntingDetection />} />
         <Route path='/informasiPosyandu' element={<InformasiPosyandu />} />
         <Route path='/informasiPosyandu2' element={<InformasiPosyandu2 />} />
+        <Route path='/signUp' element={<SignUp />} />
       </Routes>
     </Router>
   );

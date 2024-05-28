@@ -93,7 +93,7 @@ const Navbar = () => {
           <Link to="#" className="hover:text-darkGrayishBlue">
             Tentang Kami
           </Link>
-          <Link to="#" className="hover:text-darkGrayishBlue">
+          <Link to="signUp" className="hover:text-darkGrayishBlue">
             Masuk ke Akun
           </Link>
         </div>
