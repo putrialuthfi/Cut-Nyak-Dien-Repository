@@ -2,65 +2,66 @@ import React from 'react';
 
 const signUp = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col lg:flex-row">
       {/* Left Section (Image) */}
-      <div className="w-1/2 bg-gray-100 flex items-center justify-center">
+      <div className="w-full lg:w-1/2 bg-gray-100 flex items-center justify-center" style={{ height: '90vh' }}>
         <img
-          src="/path/to/your/image.jpg"
-          alt="Healthcare Professional"
-          className="max-h-full"
+          src="/src/assets/img-signup.png"
+          alt="Illustration SignUp Posyandu-Line"
+          className="max-h-full max-w-full object-contain"
         />
       </div>
 
       {/* Right Section (Form) */}
-      <div className="w-1/2 bg-white p-8">
-        <h1 className="text-2xl font-semibold mb-4">Daftar Akun Posyandu-Line</h1>
-        <br />
-        <div className="mb-4">
-          <label htmlFor="email" className="block font-medium">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="w-full border rounded p-2"
-          />
+      <div className="w-full lg:w-1/2 bg-white p-8">
+        <div className="mb-10">
+          <h1 className="text-2xl font-bold mb-1 text-[#9D9D9C]">Daftar Akun</h1>
+          <h1 className="text-2xl font-bold mb-4 text-[#135D66]">Posyandu-Line</h1>
         </div>
-        <div className="mb-4">
-          <label htmlFor="password" className="block font-medium">
-            Kata Sandi
-          </label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            className="w-full border rounded p-2"
-          />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="confirmPassword" className="block font-medium">
-            Konfirmasi Kata Sandi
-          </label>
-          <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            className="w-full border rounded p-2"
-          />
+        <div className="mb-10">
+          <div className="mb-4">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukan Email Anda"
+              className="w-full border rounded p-2"
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Masukan Kata Sandi"
+              className="w-full border rounded p-2"
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Konfirmasi Kembali Kata Sandi Anda"
+              className="w-full border rounded p-2"
+            />
+          </div>
         </div>
         <button
           type="button"
-          className="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
+          className="w-full border p-2.5 bg-[#135D66] text-white rounded-md font-semibold mb-6"
         >
           Daftar
         </button>
-        <p className="mt-4 text-sm">
-          Sudah Punya Akun?{' '}
-          <a href="/login" className="text-blue-500 hover:underline">
-            Masuk Disini
-          </a>
-        </p>
+        <div className="mt-4 text-[#135D66]">
+          <p className="mb-1">
+            Sudah Punya Akun?{' '}
+            <a href="/login" className="font-bold hover:underline">Masuk Disini</a>
+          </p>
+          <p>
+            <a href="/login" className="font-bold hover:underline">Klik Disini</a> Untuk Masuk ke Akun Orang Tua
+          </p>
+        </div>
       </div>
     </div>
   );
