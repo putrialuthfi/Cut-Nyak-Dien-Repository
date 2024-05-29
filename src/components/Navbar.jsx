@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
           <Link to="/">
-            <img className="w-66 h-75" src="src/assets/main-icon.png" alt="Main Icon" />
+            <img className="w-10 h-19" src="src/assets/main-icon.png" alt="Main Icon" />
           </Link>
           <img className="w-184 h-34" src="src/assets/main-text.png" alt="Main Text" />
         </div>
