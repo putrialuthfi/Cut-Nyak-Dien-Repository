@@ -19,11 +19,11 @@ Currently, two official plugins are available:
 - [ ] Article Page 2 (Wildan)
 - [ ] Tentang Kami (Syania)
 - [ ] Sign In Page (Riska)
-- [ ] Sign Up Page (Luthfi)
+- [x] Sign Up Page (Luthfi)
 - [ ] Profil Admin 
 - [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
-- [ ] Form Child Monitoring
+- [ ] Form Child Monitoring (Luthfi)
 - [ ] Popup result monitoring
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
