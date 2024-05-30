@@ -31,10 +31,6 @@ const formInputchildmon = () => {
             dateFormat="yyyy-MM-dd"
             className="border p-2 rounded w-full"
           />
-
-          {/* <label htmlFor="input2" className="text-left">Tanggal Vaksin</label>
-          <input id="input2" type="text" className="border p-2 rounded" /> */}
-
           <label htmlFor="input2" className="text-left">Nama Vaksin</label>
           <select id="input2" className="border p-2 rounded">
             <option value="">Pilih salah satu</option>
