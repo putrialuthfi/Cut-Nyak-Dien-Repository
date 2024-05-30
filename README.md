@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 ## TO-DO LIST
 
 - [x] Navbar & Footer (Rangga)
-- [x] Homepage (Rangga) On Progress 💪
+- [x] Homepage (Rangga)
 - [x] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi)
 - [ ] Stunting Detection Page (Rendy)
