@@ -6,6 +6,7 @@ import InformasiPosyandu from "./components/InformasiPosyandu";
 import InformasiPosyandu2 from "./components/InformasiPosyandu2";
 import SignUp from "./components/SignUp";
 import Article_Page1 from "./components/Article_Page1";
+import FormInputChildMon from "./components/FormInputChildMon";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/formInputchildmon" element={<FormInputChildMon />} />
         <Route path="/stuntingDetection" element={<StuntingDetection />} />
         <Route path="/informasiPosyandu" element={<InformasiPosyandu />} />
         <Route path="/informasiPosyandu2" element={<InformasiPosyandu2 />} />
