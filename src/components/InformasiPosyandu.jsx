@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CardInformasiPsy = ({ content }) => {
   return (
@@ -6,11 +7,37 @@ const CardInformasiPsy = ({ content }) => {
       <div className="text-gray-800">
         {content}
       </div>
-      <button className="px-4 py-2 bg-[#135D66] text-white rounded-[14px] hover:bg-opacity-90">
-        Lihat Selengkapnya
-      </button>
+      <Link to="/informasiPosyandu2">
+        <button className="px-4 py-2 bg-[#135D66] text-white rounded-[14px] hover:bg-opacity-90">
+          Lihat Selengkapnya
+        </button>
+      </Link>
+    </div>
+  );
+};
+
+function App() {
+  const cardContents = [
+    "Posyandu Dahlia 1",
+    "Posyandu Dahlia 2",
+    "Posyandu Dahlia 3",
+    "Posyandu Dahlia 4",
+    "Posyandu Dahlia 5"
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#f9f9f9] p-4">
+      <header className="mb-8">
+        <h3 className="text-2xl font-bold mb-2 ml-6 text-left">Data Posyandu</h3>
+        <h6 className="text-lg font-light mb-8 ml-6 text-left">Lokasi: Desa Sukasari, Kecamatan Serang Baru, Kabupaten Bekasi</h6>
+      </header>
+      <div className="flex flex-col items-center">
+        {cardContents.map((content, index) => (
+          <CardInformasiPsy key={index} content={content} />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default CardInformasiPsy;
+export default App;

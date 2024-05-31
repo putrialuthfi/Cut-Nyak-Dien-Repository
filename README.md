@@ -10,21 +10,21 @@ Currently, two official plugins are available:
 ## TO-DO LIST
 
 - [x] Navbar & Footer (Rangga)
-- [x] Homepage (Rangga) On Progress 💪
-- [ ] Informasi Posyandu Page 1 (Luthfi)
-- [ ] Informasi Posyandu Page 2 (Luthfi)
+- [x] Homepage (Rangga)
+- [x] Informasi Posyandu Page 1 (Luthfi)
+- [ ] Informasi Posyandu Page 2 (Luthfi) on progress
 - [ ] Stunting Detection Page (Rendy)
 - [ ] Popup Stunting Detection (Rendy)
 - [ ] Article Page 1 (Wildan)
 - [ ] Article Page 2 (Wildan)
 - [ ] Tentang Kami (Syania)
 - [ ] Sign In Page (Riska)
-- [ ] Sign Up Page
+- [x] Sign Up Page (Luthfi)
 - [ ] Profil Admin 
-- [ ] Form Input Jadwal Posyandu (Luthfi)
+- [ ] Form Input Jadwal Posyandu
 - [ ] Popup sukses upload jadwal posyandu
-- [ ] Form Child Monitoring
-- [ ] Popup result monitoring
+- [x] Form Child Monitoring (Luthfi)
+- [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
 - [ ] Forum Discussion Page

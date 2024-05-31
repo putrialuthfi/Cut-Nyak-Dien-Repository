@@ -15,10 +15,7 @@ const Navbar = () => {
   // Close the dropdown if clicked outside
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (
-        !event.target.closest(".dropdown-menu") &&
-        !event.target.closest(".dropdown-button")
-      ) {
+      if (!event.target.closest(".dropdown-menu") && !event.target.closest(".dropdown-button")) {
         setDropdownOpen(false);
       }
     };
@@ -37,17 +34,9 @@ const Navbar = () => {
         {/* Logo */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
           <Link to="/">
-            <img
-              className="w-66 h-75"
-              src="src/assets/main-icon.png"
-              alt="Main Icon"
-            />
+            <img className="w-10 h-19" src="src/assets/main-icon.png" alt="Main Icon" />
           </Link>
-          <img
-              className="w-184 h-34"
-              src="src/assets/main-text.png"
-              alt="Main Text"
-            />
+          <img className="w-184 h-34" src="src/assets/main-text.png" alt="Main Text" />
         </div>
         {/* Menu Items */}
         <div className="hidden space-x-6 md:flex text-white font-semibold ">
@@ -55,45 +44,30 @@ const Navbar = () => {
             Beranda
           </Link>
           <div className="relative">
-            <button
-              onClick={handleDropdownToggle}
-              className="hover:text-darkGrayishBlue dropdown-button"
-            >
+            <button onClick={handleDropdownToggle} className="hover:text-darkGrayishBlue dropdown-button">
               Layanan
             </button>
             {dropdownOpen && (
               <div className="absolute bg-white text-black mt-2 py-2 w-48 shadow-lg dropdown-menu">
-                <Link
-                  to="/stuntingDetection"
-                  onClick={handleLinkClick}
-                  className="block px-4 py-2 hover:bg-gray-200"
-                >
+                <Link to="/stuntingDetection" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Stunting Detection
                 </Link>
-                <Link
-                  to="/service2"
-                  onClick={handleLinkClick}
-                  className="block px-4 py-2 hover:bg-gray-200"
-                >
-                  Service 2
+                <Link to="/informasiPosyandu" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
+                  Informasi Posyandu
                 </Link>
-                <Link
-                  to="/service3"
-                  onClick={handleLinkClick}
-                  className="block px-4 py-2 hover:bg-gray-200"
-                >
+                <Link to="/service3" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Service 3
                 </Link>
               </div>
             )}
           </div>
-          <Link to="#" className="hover:text-darkGrayishBlue">
+          <Link to="/article_Page1" className="hover:text-darkGrayishBlue">
             Artikel
           </Link>
           <Link to="/AboutUs" className="hover:text-darkGrayishBlue">
             Tentang Kami
           </Link>
-          <Link to="#" className="hover:text-darkGrayishBlue">
+          <Link to="signUp" className="hover:text-darkGrayishBlue">
             Masuk ke Akun
           </Link>
         </div>
