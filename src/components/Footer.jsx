@@ -4,9 +4,9 @@ import ImageBg from '../assets/footerbg.png'
 export default function App() {
   return (
     <footer
-      className="bg-[#76ABAE] lg:text-left">
+      className="bg-[#76ABAE] lg:text-left w-full h-full">
       {/* <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. --> */}
-      <div className="py-[20px] pr-[90px] text-center md:text-left flex md:justify-end">
+      <div className="pr-10 text-center md:text-left flex md:justify-end w-full h-full">
       <img
             src="./src/assets/footerbg.png"
             alt="Baby"

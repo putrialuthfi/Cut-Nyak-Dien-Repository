@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="relative container py-1 md:px-10 px-7 bg-[#135D66]">
+    <nav className="w-full relative py-3 md:px-10 px-7 bg-[#135D66]">
       {/* Flex Container */}
       <div className="flex items-center justify-between">
         {/* Logo */}
@@ -39,7 +39,7 @@ const Navbar = () => {
           <img className="w-184 h-34" src="src/assets/main-text.png" alt="Main Text" />
         </div>
         {/* Menu Items */}
-        <div className="hidden space-x-6 md:flex text-white font-semibold ">
+        <div className="hidden space-x-6 md:flex text-white font-regular ">
           <Link to="/" className="hover:text-darkGrayishBlue">
             Beranda
           </Link>

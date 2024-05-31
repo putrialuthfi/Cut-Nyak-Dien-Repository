@@ -5,7 +5,7 @@ const Profile = () => {
       <section id='profile'>
         <h2 className='text-4xl font-bold text-center pt-12 bg-[#F9F9F9]'>Profil Tenaga Kesehatan</h2>
         <p className='text-center pt-2 bg-[#F9F9F9]'>Kenali lebih dekat para tenaga kesehatan yang berkontribusi langsung di Posyandu kita</p>
-        <div className='flex items-center justify-center container mx-auto w-[1519px] h-[500px] bg-[#F9F9F9]'>
+        <div className='flex items-center justify-center w-full h-full mx-auto bg-[#F9F9F9] pt-10 pb-10'>
             {/* Grid */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4'>
                 {/* Card 1 */}

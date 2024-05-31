@@ -5,11 +5,11 @@ const Layanan = () => {
   return (
     <section id='testimonials'>
       {/* Container */}
-      <div className='px-5 mx-auto text-center bg-cover w-[1519px] h-[553px]' style={{backgroundImage: `url(${BgLayanan})`}}>
+      <div className='mx-auto text-center bg-cover w-full h-full pb-10' style={{backgroundImage: `url(${BgLayanan})`}}>
         {/* Heading */}
         <h2 className='text-4xl font-bold text-center pt-12'>Layanan <span className='text-[#135D66]'>Posyandu-Line</span></h2>
         {/* Container Layanan */}
-        <div className='flex justify-center mt-14 md:flex-row md:space-x-12 h-[320px] w-[850px] ml-[320px]'>
+        <div className='flex mx-auto justify-center mt-14 md:flex-row md:space-x-12 h-[320px] w-[850px]'>
           {/* Informasi Posyandu */}
           <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
           <img className="w-140 h-30" src="src/assets/InformasiPosyandu.png"></img>
