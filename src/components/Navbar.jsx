@@ -90,7 +90,7 @@ const Navbar = () => {
           <Link to="#" className="hover:text-darkGrayishBlue">
             Artikel
           </Link>
-          <Link to="#" className="hover:text-darkGrayishBlue">
+          <Link to="/AboutUs" className="hover:text-darkGrayishBlue">
             Tentang Kami
           </Link>
           <Link to="#" className="hover:text-darkGrayishBlue">
