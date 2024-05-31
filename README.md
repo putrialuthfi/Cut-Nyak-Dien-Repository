@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 - [x] Navbar & Footer (Rangga)
 - [x] Homepage (Rangga)
 - [x] Informasi Posyandu Page 1 (Luthfi)
-- [ ] Informasi Posyandu Page 2 (Luthfi) on progress
+- [x] Informasi Posyandu Page 2 (Luthfi) on progress
 - [ ] Stunting Detection Page (Rendy)
 - [ ] Popup Stunting Detection (Rendy)
 - [ ] Article Page 1 (Wildan)
@@ -23,8 +23,8 @@ Currently, two official plugins are available:
 - [ ] Profil Admin 
 - [ ] Form Input Jadwal Posyandu
 - [ ] Popup sukses upload jadwal posyandu
-- [ ] Form Child Monitoring (Luthfi) on progress
-- [ ] Popup result monitoring
+- [x] Form Child Monitoring (Luthfi)
+- [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
 - [ ] Forum Discussion Page
