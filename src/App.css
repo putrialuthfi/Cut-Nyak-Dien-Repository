@@ -142,3 +142,13 @@ body {
   color: #6b7280;
 }
 /*End Styling Informasi Posyandu 2 */
+
+/*Styling Form Input Child Monitoring Page*/
+.react-datepicker-wrapper,
+.react-datepicker__input-container input {
+  height: 3rem; /* Same as h-12 in Tailwind CSS */
+  width: 100%; /* Ensure full width */
+  padding: 0.5rem; /* Same as p-2 in Tailwind CSS */
+  border-radius: 0.25rem; /* Same as rounded in Tailwind CSS */
+  border: 1px solid #e5e7eb; /* Same as border in Tailwind CSS */
+}
