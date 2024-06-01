@@ -10,6 +10,7 @@ import Article_Page1 from "./components/Article_Page1";
 import FormInputChildMon from "./components/FormInputChildMon";
 import PopupInputChild from "./components/PopupInputChild";
 import ForumDiskusi from "./components/ForumDiskusi";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/article_Page1" element={<Article_Page1 />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/forumDiskusi" element={<ForumDiskusi />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
     </Router>
   );
