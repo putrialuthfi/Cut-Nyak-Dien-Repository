@@ -13,9 +13,9 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Optimize Page Size (Rangga)
 - [x] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi) on progress
-- [ ] Stunting Detection Page (Rendy)
+- [x] Stunting Detection Page (Rendy)
 - [ ] Popup Stunting Detection (Rendy)
-- [ ] Article Page 1 (Wildan)
+- [x] Article Page 1 (Wildan)
 - [ ] Article Page 2 (Wildan)
 - [x] Tentang Kami (Rangga)
 - [ ] Sign In Page (Riska)
