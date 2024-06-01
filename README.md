@@ -26,7 +26,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
-- [ ] Forum Discussion Page (Rangga)
+- [x] Forum Discussion Page (Rangga)
 - [ ] Monitoring Record Page/Result Monitoring 1
 - [ ] Monitoring Record Page/Result Monitoring 2
 - [ ] Profil Orangtua (Satria)
