@@ -65,7 +65,7 @@ const FormInputChildMon = () => {
                + Tambah Data Lain
             </button>
           </Link>
-          <Link to="">
+          <Link to="/PopupInputChild">
             <button className="bg-[#135D66] text-white py-2 px-4 rounded-[14px] hover:bg-opacity-90">
               Upload Data
             </button>

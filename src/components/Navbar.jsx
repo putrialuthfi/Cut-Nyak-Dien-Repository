@@ -34,9 +34,9 @@ const Navbar = () => {
         {/* Logo */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
           <Link to="/">
-            <img className="w-10 h-19" src="src/assets/main-icon.png" alt="Main Icon" />
+            <img className="w-auto h-10" src="src/assets/main-logo.png" alt="Logo Posyandu-Line" />
           </Link>
-          <img className="w-184 h-34" src="src/assets/main-text.png" alt="Main Text" />
+            
         </div>
         {/* Menu Items */}
         <div className="hidden space-x-6 md:flex text-white font-regular ">
