@@ -10,6 +10,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 
 - [x] Navbar & Footer (Rangga)
 - [x] Homepage; Landing Page, Layanan Posyandu, Profil Tenaga Kerja, Carousel Informasi Artikel, Forum Diskusi (Rangga)
+- [x] Optimize Page Size (Rangga)
 - [x] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi) on progress
 - [ ] Stunting Detection Page (Rendy)
