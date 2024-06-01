@@ -27,7 +27,7 @@ Currently, two official plugins are available:
 - [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
-- [ ] Forum Discussion Page
+- [ ] Forum Discussion Page (Rangga)
 - [ ] Monitoring Record Page/Result Monitoring 1
 - [ ] Monitoring Record Page/Result Monitoring 2
 - [ ] Profil Orangtua (Satria)
