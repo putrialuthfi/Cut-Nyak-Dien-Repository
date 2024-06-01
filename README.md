@@ -17,7 +17,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Popup Stunting Detection (Rendy)
 - [ ] Article Page 1 (Wildan)
 - [ ] Article Page 2 (Wildan)
-- [ ] Tentang Kami (Syania)
+- [x] Tentang Kami (Rangga)
 - [ ] Sign In Page (Riska)
 - [x] Sign Up Page (Luthfi)
 - [ ] Profil Admin 
