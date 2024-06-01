@@ -55,8 +55,8 @@ const Navbar = () => {
                 <Link to="/informasiPosyandu" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Informasi Posyandu
                 </Link>
-                <Link to="/service3" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
-                  Service 3
+                <Link to="/monitoring" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
+                  Monitoring Record
                 </Link>
               </div>
             )}

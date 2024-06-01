@@ -11,6 +11,7 @@ import FormInputChildMon from "./components/FormInputChildMon";
 import PopupInputChild from "./components/PopupInputChild";
 import ForumDiskusi from "./components/ForumDiskusi";
 import AboutUs from "./components/AboutUs";
+import Monitoring from"./components/Monitoring";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/forumDiskusi" element={<ForumDiskusi />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/monitoring" element={<Monitoring />} />
       </Routes>
     </Router>
   );

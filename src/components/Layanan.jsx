@@ -35,10 +35,12 @@ const Layanan = () => {
           {/* Monitoring Record */}
           <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
           <img className="w-140 h-30" src="src/assets/Monitoring Record.png"></img>
+          <Link to="/monitoring">
             <h5 className='text-[20px] font-bold pt-8'>Monitoring Record</h5>
             <p className='text-sm text-darkGrayishBlue'>
             Simpan jejak kesehatan dengan mudah, akses informasi penting kapan saja.
             </p>
+            </Link>
           </button>
         </div>
       </div>

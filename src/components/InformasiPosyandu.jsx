@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const CardInformasiPsy = ({ content }) => {
   return (
@@ -26,7 +27,8 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f9f9f9] p-4">
+    <infoposyandu>
+    <div className="bg-[#f9f9f9] p-4">
       <header className="mb-8">
         <h3 className="text-2xl font-bold mb-2 ml-6 text-left">Data Posyandu</h3>
         <h6 className="text-lg font-light mb-8 ml-6 text-left">Lokasi: Desa Sukasari, Kecamatan Serang Baru, Kabupaten Bekasi</h6>
@@ -37,6 +39,8 @@ function App() {
         ))}
       </div>
     </div>
+    <Footer />
+    </infoposyandu>
   );
 }
 
