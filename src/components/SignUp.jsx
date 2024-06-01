@@ -47,12 +47,14 @@ const signUp = () => {
             />
           </div>
         </div>
+        <a href="/admHome">
         <button
           type="button"
           className="w-full border p-2.5 bg-[#135D66] text-white rounded-md font-semibold mb-6"
         >
           Daftar
         </button>
+        </a>
         <div className="mt-4 text-[#135D66]">
           <p className="mb-1">
             Sudah Punya Akun?{' '}

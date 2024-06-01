@@ -13,19 +13,23 @@ const Layanan = () => {
           {/* Informasi Posyandu */}
           <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
           <img className="w-140 h-30" src="src/assets/InformasiPosyandu.png"></img>
+          <Link to="/informasiPosyandu">
             <h5 className='text-[20px] font-bold pt-8'>Informasi Posyandu</h5>
             <p className='text-sm text-darkGrayishBlue'>
             Temukan jadwal dan lihat kegiatan. Akses dengan mudah!
             </p>
+            </Link>
           </button>
 
           {/* Stunting Detection */}
           <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
           <img className="w-140 h-30" src="src/assets/StuntingDetection.png"></img>
+          <Link to="/stuntingDetection">
             <h5 className='text-[20px] font-bold pt-8'>Stunting Detection</h5>
             <p className='text-sm text-darkGrayishBlue'>
             Taklukkan stunting, jaga masa depan anak-anak. Cek sekarang!
             </p>
+            </Link>
           </button>
 
           {/* Monitoring Record */}
