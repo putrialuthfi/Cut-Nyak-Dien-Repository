@@ -7,6 +7,7 @@ import InformasiPosyandu2 from "./components/InformasiPosyandu2";
 import SignUp from "./components/SignUp";
 import Article_Page1 from "./components/Article_Page1";
 import FormInputChildMon from "./components/FormInputChildMon";
+import ForumDiskusi from "./components/ForumDiskusi";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/informasiPosyandu2" element={<InformasiPosyandu2 />} />
         <Route path="/article_Page1" element={<Article_Page1 />} />
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/forumDiskusi" element={<ForumDiskusi />} />
       </Routes>
     </Router>
   );

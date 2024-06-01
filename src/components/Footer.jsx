@@ -38,22 +38,22 @@ export default function App() {
               className="mb-4 flex justify-center md:justify-start text-[18px] font-bold">
               Layanan
             </h6>
-            <p className="mb-2">
+            <p className="mb-2 text-nowrap">
               <a className="text-black"
               >Informasi Posyandu</a>
             </p>
-            <p className="mb-2">
+            <p className="mb-2 text-nowrap">
               <a className="text-black"
               >Stunting Detection</a>
             </p>
-            <p className="mb-2">
+            <p className="mb-2 text-nowrap">
               <a className="text-black"
               >Child Monitoring Record</a>
             </p>
           </div>
           {/* <!-- Contact section --> */}
         </div>
-        <div className="grid-1 grid md:grid-cols-1 lg:grid-cols-3 pr-10 items-center mt-5"></div>
+        <div className="grid-1 grid md:grid-cols-1 lg:grid-cols-3 pr-10 items-center mt-5 ml-5"></div>
         <div className='items-center pt-[54px]'>
             <p className="mb-4 flex items-center justify-center md:justify-start">
             <svg xmlns="http://www.w3.org/2000/svg" 
