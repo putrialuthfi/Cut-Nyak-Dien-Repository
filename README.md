@@ -28,7 +28,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
 - [x] Forum Discussion Page (Rangga)
-- [x] Monitoring Record Page/Result Monitoring 1 (Rangga) On Progress 🎮
+- [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
 - [ ] Monitoring Record Page/Result Monitoring 2
 - [ ] Profil Orangtua (Satria)
 - [ ] Profil Anak (Satria)
