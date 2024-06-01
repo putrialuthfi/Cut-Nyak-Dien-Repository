@@ -4,13 +4,12 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview hasil codingan
 
-NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
-Currently, two official plugins are available:
+NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
 
 ## TO-DO LIST
 
 - [x] Navbar & Footer (Rangga)
-- [x] Homepage (Rangga)
+- [x] Homepage; Landing Page, Layanan Posyandu, Profil Tenaga Kerja, Carousel Informasi Artikel, Forum Diskusi (Rangga)
 - [x] Informasi Posyandu Page 1 (Luthfi)
 - [ ] Informasi Posyandu Page 2 (Luthfi) on progress
 - [ ] Stunting Detection Page (Rendy)
@@ -27,7 +26,7 @@ Currently, two official plugins are available:
 - [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel
 - [ ] Popup sukses upload artikel
-- [ ] Forum Discussion Page
+- [x] Forum Discussion Page (Rangga)
 - [ ] Monitoring Record Page/Result Monitoring 1
 - [ ] Monitoring Record Page/Result Monitoring 2
 - [ ] Profil Orangtua (Satria)
