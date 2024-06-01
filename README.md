@@ -4,8 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview hasil codingan
 
-NOTE: HARAP DIPERHATIKAN UNTUK SELALU CLONE REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
-Currently, two official plugins are available:
+NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
 
 ## TO-DO LIST
 
