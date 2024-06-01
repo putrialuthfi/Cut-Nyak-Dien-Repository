@@ -32,7 +32,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Monitoring Record Page/Result Monitoring 2
 - [ ] Profil Orangtua (Satria)
 - [ ] Profil Anak (Satria)
-- [ ] Page publish forum diskusi
+- [ ] Page publish forum diskusi (Rangga)  On Progress 🎮
 - [ ] Pop-up Profil Tenaga Kesehatan
 
 ## HOW TO CLONE REPOSITORY
