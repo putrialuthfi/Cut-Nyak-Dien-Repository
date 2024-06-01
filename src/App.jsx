@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import StuntingDetection from "./components/StuntingDetection";
 import InformasiPosyandu from "./components/InformasiPosyandu";
 import InformasiPosyandu2 from "./components/InformasiPosyandu2";
+import SignIn from ".components/SignIn";
 import SignUp from "./components/SignUp";
 import Article_Page1 from "./components/Article_Page1";
 import FormInputChildMon from "./components/FormInputChildMon";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/informasiPosyandu" element={<InformasiPosyandu />} />
         <Route path="/informasiPosyandu2" element={<InformasiPosyandu2 />} />
         <Route path="/article_Page1" element={<Article_Page1 />} />
+        <Route path="/SignIn" element={<SignIn />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/forumDiskusi" element={<ForumDiskusi />} />
       </Routes>
