@@ -21,7 +21,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Sign In Page (Riska)
 - [x] Sign Up Page (Luthfi)
 - [ ] Profil Admin 
-- [ ] Form Input Jadwal Posyandu
+- [ ] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
 - [x] Form Child Monitoring (Luthfi)
 - [ ] Popup result monitoring (luthfi)
