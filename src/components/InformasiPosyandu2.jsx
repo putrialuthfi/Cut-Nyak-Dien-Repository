@@ -14,23 +14,48 @@ const informasiPosyandu2 = () => {
         </div>
         <div className="profile-details text-left w-1/2 leading-8 p-4">
           <h2 className="profile-title text-2xl font-bold mb-4">Profil Posyandu</h2>
-          <p><strong>Nama Posyandu:</strong> Posyandu Dahlia 1</p>
-          <p><strong>Alamat Posyandu:</strong> Kp Ceper Karadek RT 001 RW 001 Ds. Sukasari
-              <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.16862159823!2d106.68942963444113!3d-6.229728174304886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6841e4c046b34d%3A0x60f9b7e9efda1ae0!2sBekasi%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1620123456789!5m2!1sen!2sus"
-              width="100%"
-              height="200"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              >
-              </iframe>
-              <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" className="map-link underline">
-                Lihat selengkapnya di peta
-              </a>
-          </p>
-          <p><strong>Jumlah Kegiatan:</strong> 3</p>
-          <p><strong>Jumlah Kader:</strong> 10</p>
+          <table className="table-auto">
+            <tbody>
+              <tr>
+                <td className="pr-4">Nama Posyandu: </td>
+                <td>Posyandu Dahlia I</td>
+              </tr>
+              <tr>
+                <td className="pr-4">Alamat Posyandu: </td>
+                <td>Kp Ceper Karadek RT 001 RW 001 Ds. Sukasari</td>
+              </tr>
+              <tr>
+                <td className="pr-4"></td>
+                <td>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.16862159823!2d106.68942963444113!3d-6.229728174304886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6841e4c046b34d%3A0x60f9b7e9efda1ae0!2sBekasi%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1620123456789!5m2!1sen!2sus"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    >
+                 </iframe>
+                </td>
+              </tr>
+              <tr>
+                <td className="pr-4"></td>
+                <td>
+                  <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" className="map-link underline">
+                    Lihat selengkapnya di peta
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td className="pr-4">Jumlah Kegiatan:</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td className="pr-4">Jumlah Kader:</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -81,7 +106,7 @@ const informasiPosyandu2 = () => {
                     <td className="pr-4">
                       <img src="src/assets/icon-clock.png" alt="" width={25} />
                     </td>
-                    <td>9 Maret 2024 - 08.00 WIB</td>
+                    <td>10 Maret 2024 - 09.00 WIB</td>
                   </tr>
                   <tr className="mb-4">
                     <td className="pr-4">
@@ -93,16 +118,10 @@ const informasiPosyandu2 = () => {
               </table>
             </div>
           </div>
-          {/* <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div> */}
         </div>
 
         {/* card 3 */}
         <div className="w-80 h-full p-4 max-w-sm rounded-3xl overflow-hidden shadow-lg border border-[#76ABAE]">
-          {/* <img class="w-full" src="src/assets/InformasiPosyandu.png" alt="Sunset in the mountains"></img> */}
           <div className="p-4">
             <h3><strong>Pemeriksaan Kesehatan Ibu Hamil</strong></h3>
             <p className="text-sm text-left mt-4">
@@ -115,7 +134,7 @@ const informasiPosyandu2 = () => {
                     <td className="pr-4">
                       <img src="src/assets/icon-clock.png" alt="" width={25} />
                     </td>
-                    <td>9 Maret 2024 - 08.00 WIB</td>
+                    <td>11 Maret 2024 - 10.00 WIB</td>
                   </tr>
                   <tr className="mb-4">
                     <td className="pr-4">
@@ -127,11 +146,6 @@ const informasiPosyandu2 = () => {
               </table>
             </div>
           </div>
-          {/* <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div> */}
         </div>
         </div>
       </div>
