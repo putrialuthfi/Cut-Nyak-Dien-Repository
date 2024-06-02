@@ -29,7 +29,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Popup sukses upload artikel
 - [x] Forum Discussion Page (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
-- [x] Monitoring Record Page/Result Monitoring 2 (Rangga) On Progress
+- [x] Monitoring Record Page/Result Monitoring 2 (Rangga)
 - [ ] Profil Orangtua (Satria)
 - [ ] Profil Anak (Satria)
 - [x] Page publish forum diskusi (Rangga)
