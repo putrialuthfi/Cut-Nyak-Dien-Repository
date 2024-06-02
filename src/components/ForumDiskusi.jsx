@@ -55,7 +55,9 @@ function ForumDiskusi() {
             placeholder="Cari permasalahan yang serupa"
             className="w-full p-2 border border-gray-300 rounded-lg"
           />
+          <a href="/formDiskusi">
           <button className="ml-2 px-5 py-2 bg-[#135D66] text-white rounded-lg text-[15px] text-nowrap">Tulis Pertanyaan Baru</button>
+          </a>
         </div>
         <h2 className="pb-4">Filter berdasarkan: <span className="font-bold">Semua Diskusi</span></h2>
 

@@ -13,6 +13,7 @@ import ForumDiskusi from "./components/ForumDiskusi";
 import AboutUs from "./components/AboutUs";
 import Monitoring from"./components/Monitoring";
 import FormInputJadwal from "./components/FormInputJadwal";
+import FormDiskusi from "./components/FormDiskusi";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/forumDiskusi" element={<ForumDiskusi />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/monitoring" element={<Monitoring />} />
+        <Route path="/formDiskusi" element={<FormDiskusi />} />
       </Routes>
     </Router>
   );
