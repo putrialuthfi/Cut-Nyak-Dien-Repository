@@ -33,9 +33,9 @@ const FormInputChildMon = () => {
             </select>
           </div>
           <div className="col-span-2 md:col-span-1 mb-4">
-            <label htmlFor="tanggalVaksin" className="block text-left text-black mb-2">Tanggal Vaksin</label>
+            <label htmlFor="tglImunisasi" className="block text-left text-black mb-2">Tanggal Imunisasi</label>
             <DatePicker
-              id="tanggalVaksin"
+              id="tglImunisasi"
               selected={selectedDate}
               onChange={date => setSelectedDate(date)}
               dateFormat="yyyy-MM-dd"
@@ -45,8 +45,8 @@ const FormInputChildMon = () => {
             />
           </div>
           <div className="col-span-2 md:col-span-1 mb-4">
-            <label htmlFor="namaVaksin" className="text-left block mb-2">Nama Vaksin</label>
-            <select id="namaVaksin" className="border p-2 rounded w-full h-12">
+            <label htmlFor="namaImunisasi" className="text-left block mb-2">Nama Imunisasi</label>
+            <select id="namaImunisasi" className="border p-2 rounded w-full h-12">
               <option value="">Pilih salah satu</option>
               <option value="Campak">Campak</option>
               <option value="Polio">Polio</option>
