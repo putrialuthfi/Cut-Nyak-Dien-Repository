@@ -12,6 +12,7 @@ import PopupInputChild from "./components/PopupInputChild";
 import ForumDiskusi from "./components/ForumDiskusi";
 import AboutUs from "./components/AboutUs";
 import Monitoring from"./components/Monitoring";
+import FormInputJadwal from "./components/FormInputJadwal";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/formInputjadwal" element={<FormInputJadwal />} />
         <Route path="/formInputchildmon" element={<FormInputChildMon />} />
         <Route path="/popup" component={<PopupInputChild/>} />
         <Route path="/stuntingDetection" element={<StuntingDetection />} />
