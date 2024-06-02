@@ -8,13 +8,13 @@ const signUp = () => {
         <img
           src="/src/assets/img-signup.png"
           alt="Illustration SignUp Posyandu-Line"
-          className="max-h-full max-w-full object-contain"
+          className="h-full w-full object-cover"
         />
       </div>
 
       {/* Right Section (Form) */}
       <div className="w-full lg:w-1/2 bg-white p-8">
-        <div className="mb-10">
+        <div className="mb-10 text-center">
           <h1 className="text-2xl font-bold mb-1 text-[#9D9D9C]">Daftar Akun</h1>
           <h1 className="text-2xl font-bold mb-4 text-[#135D66]">Posyandu-Line</h1>
         </div>
@@ -55,7 +55,7 @@ const signUp = () => {
           Daftar
         </button>
         </a>
-        <div className="mt-4 text-[#135D66]">
+        <div className="mt-4 text-[#135D66] text-center">
           <p className="mb-1">
             Sudah Punya Akun?{' '}
             <a href="/login" className="font-bold hover:underline">Masuk Disini</a>
