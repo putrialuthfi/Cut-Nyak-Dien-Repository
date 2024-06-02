@@ -67,7 +67,7 @@ const Navbar = () => {
           <Link to="/aboutUs" className="hover:text-darkGrayishBlue">
             Tentang Kami
           </Link>
-          <Link to="signUp" className="hover:text-darkGrayishBlue">
+          <Link to="signIn" className="hover:text-darkGrayishBlue">
             Masuk ke Akun
           </Link>
         </div>

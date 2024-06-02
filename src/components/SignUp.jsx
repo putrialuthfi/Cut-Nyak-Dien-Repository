@@ -47,7 +47,7 @@ const signUp = () => {
             />
           </div>
         </div>
-        <a href="/admHome">
+        <a href="/signin">
         <button
           type="button"
           className="w-full border p-2.5 bg-[#135D66] text-white rounded-md font-semibold mb-6"
@@ -58,10 +58,10 @@ const signUp = () => {
         <div className="mt-4 text-[#135D66] text-center">
           <p className="mb-1">
             Sudah Punya Akun?{' '}
-            <a href="/login" className="font-bold hover:underline">Masuk Disini</a>
+            <a href="/signIn" className="font-bold hover:underline">Masuk Disini</a>
           </p>
           <p>
-            <a href="/login" className="font-bold hover:underline">Klik Disini</a> Untuk Masuk ke Akun Orang Tua
+            <a href="/signIn" className="font-bold hover:underline">Klik Disini</a> Untuk Masuk ke Akun Orang Tua
           </p>
         </div>
       </div>

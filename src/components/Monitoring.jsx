@@ -23,7 +23,9 @@ const ChildMonitoringRecord = () => {
                 <button className="text-[#135D66]">Lihat Hasil</button>
               </div>
             </div>
+            <a href="/monitoring2">
             <button className="bg-[#135D66] text-white py-2 px-4 rounded">Lihat Hasil</button>
+            </a>
           </div>
         ))}
       </div>

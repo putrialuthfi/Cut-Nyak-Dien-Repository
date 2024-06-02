@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 
 
 function ForumDiskusi() {
@@ -47,7 +48,8 @@ function ForumDiskusi() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
+    <forumdiskusi>
+    <div className="min-h-screen bg-gray-100 p-4 pb-10">
       <div className="max-w-4xl mx-auto pt-8">
         <div className="flex justify-between items-center mb-4">
           <input
@@ -139,6 +141,8 @@ function ForumDiskusi() {
         </div>
       </div>
     </div>
+    <Footer />
+    </forumdiskusi>
   );
 }
 
