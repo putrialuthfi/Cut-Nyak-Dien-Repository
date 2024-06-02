@@ -20,7 +20,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Tentang Kami (Rangga)
 - [ ] Sign In Page (Riska)
 - [x] Sign Up Page (Luthfi)
-- [ ] Profil Admin 
+- [ ] Profil Admin ( Riska )
 - [x] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
 - [x] Form Child Monitoring (Luthfi)
