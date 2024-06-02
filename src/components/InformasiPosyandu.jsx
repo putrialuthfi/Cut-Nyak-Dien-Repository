@@ -28,10 +28,10 @@ function App() {
 
   return (
     <infoposyandu>
-    <div className="bg-[#f9f9f9] p-4">
+    <div className="bg-[#f9f9f9] p-4 md:px-10">
       <header className="mb-8">
-        <h3 className="text-2xl font-bold mb-2 ml-6 text-left">Data Posyandu</h3>
-        <h6 className="text-lg font-light mb-8 ml-6 text-left">Lokasi: Desa Sukasari, Kecamatan Serang Baru, Kabupaten Bekasi</h6>
+        <h3 className="text-2xl font-bold mb-2 text-left">Data Posyandu</h3>
+        <h6 className="text-lg font-regular mb-8 text-left">Lokasi: Desa Sukasari, Kecamatan Serang Baru, Kabupaten Bekasi</h6>
       </header>
       <div className="flex flex-col items-center">
         {cardContents.map((content, index) => (

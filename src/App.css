@@ -42,8 +42,8 @@
 
 /* Styling Informasi Posyandu 2 */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  margin: 0 2rem;
+  font-family: Poppins;
 }
 
 .min-h-screen {
@@ -60,6 +60,8 @@ body {
 
 .profile-section {
   margin-bottom: 2rem;
+  /* margin-right: 2rem;
+  margin-left: 2rem; */
 }
 
 .flex {
@@ -80,11 +82,11 @@ body {
   font-weight: bold;
 }
 
-.map-section {
-  margin-top: 2rem;
+.schedule-section {
+  margin-top: 4rem;
 }
 
-.map-title {
+.schedule-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
