@@ -29,10 +29,10 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Popup sukses upload artikel
 - [x] Forum Discussion Page (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
-- [ ] Monitoring Record Page/Result Monitoring 2
+- [x] Monitoring Record Page/Result Monitoring 2 (Rangga)
 - [ ] Profil Orangtua (Satria)
 - [ ] Profil Anak (Satria)
-- [ ] Page publish forum diskusi (Rangga)  On Progress 🎮
+- [x] Page publish forum diskusi (Rangga)
 - [ ] Pop-up Profil Tenaga Kesehatan
 
 ## HOW TO CLONE REPOSITORY
