@@ -26,14 +26,14 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Form Child Monitoring (Luthfi)
 - [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel (luthfi)
-- [ ] Popup sukses upload artikel
+- [ ] Popup sukses upload artikel (Adisty)
 - [x] Forum Discussion Page (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 2 (Rangga)
 - [ ] Profil Orangtua (Satria)
 - [ ] Profil Anak (Satria)
 - [x] Page publish forum diskusi (Rangga)
-- [ ] Pop-up Profil Tenaga Kesehatan
+- [ ] Pop-up Profil Tenaga Kesehatan (Adisty)
 
 ## HOW TO CLONE REPOSITORY
 
