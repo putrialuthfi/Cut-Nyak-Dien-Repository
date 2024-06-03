@@ -30,8 +30,8 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Forum Discussion Page (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 2 (Rangga)
-- [ ] Profil Orangtua (Satria)
-- [ ] Profil Anak (Satria)
+- [x] Profil Orangtua (Rangga)
+- [x] Profil Anak (Rangga)
 - [x] Page publish forum diskusi (Rangga)
 - [ ] Pop-up Profil Tenaga Kesehatan (Adisty)
 
