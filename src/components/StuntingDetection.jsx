@@ -1,5 +1,10 @@
+import OrtuNavbar from '../components/OrtuNavbar';
+import Footer from '../components/Footer';
+
 const StuntingDetection = () => {
   return (
+    <stunting>
+      <OrtuNavbar />
     <div className="min-h-screen bg-white flex flex-col items-center">
       <main className="flex flex-col md:flex-row mt-8 w-full max-w-6xl bg-white rounded-lg overflow-hidden">
         <div className="md:w-1/2 p-6 flex items-center justify-center sm:hidden md:block">
@@ -88,6 +93,8 @@ const StuntingDetection = () => {
         </div>
       </main>
     </div>
+    <Footer />
+    </stunting>
   );
 };
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
 import { Link } from "react-router-dom";
+import OrtuNavbar from '../components/OrtuNavbar';
 
 const FormDiskusi = () => {
   return (
     <form>
+      <OrtuNavbar />
     <div className="flex justify-center items-center w-full h-full">
       <div className="bg-white p-6 w-full mx-12 my-10">
         <h2 className="text-black text-lg mb-4 font-semibold">Judul Pertanyaan</h2>

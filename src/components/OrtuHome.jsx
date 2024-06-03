@@ -5,12 +5,13 @@ import Informasi from "./Informasi";
 import Diskusi from "./Diskusi";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Navbar from "./Navbar";
+import OrtuNavbar from "./OrtuNavbar";
 
-const Home = () => {
+
+const OrtuHome = () => {
   return (
     <div>
-      <Navbar />
+      <OrtuNavbar />
       <Hero />
       <Layanan />
       <Profile />
@@ -21,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default OrtuHome;

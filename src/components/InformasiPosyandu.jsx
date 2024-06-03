@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import OrtuNavbar from '../components/OrtuNavbar';
 
 const CardInformasiPsy = ({ content }) => {
   return (
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <infoposyandu>
+      <OrtuNavbar />
     <div className="bg-[#f9f9f9] p-4 md:px-10">
       <header className="mb-8">
         <h3 className="text-2xl font-bold mb-2 text-left">Data Posyandu</h3>

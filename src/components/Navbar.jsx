@@ -49,19 +49,19 @@ const Navbar = () => {
             </button>
             {dropdownOpen && (
               <div className="absolute bg-white text-black mt-2 py-2 w-48 shadow-lg dropdown-menu">
-                <Link to="/stuntingDetection" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
+                <Link to="/signIn" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Stunting Detection
                 </Link>
-                <Link to="/informasiPosyandu" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
+                <Link to="/signIn" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Informasi Posyandu
                 </Link>
-                <Link to="/monitoring" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
+                <Link to="/signIn" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Monitoring Record
                 </Link>
               </div>
             )}
           </div>
-          <Link to="/article_Page1" className="hover:text-darkGrayishBlue">
+          <Link to="/signIn" className="hover:text-darkGrayishBlue">
             Artikel
           </Link>
           <Link to="/aboutUs" className="hover:text-darkGrayishBlue">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/ButtonSignIn';
 import image from '../assets/img-signup.png';
+import { Link } from "react-router-dom";
 
 function SignIn() {
   const [formType, setFormType] = useState('parent'); // 'parent' or 'admin'
@@ -31,9 +32,11 @@ function SignIn() {
 
         {/* Button */}
          {/* Button */}
-         <div className="w-full flex justify-center items-center mt-12 mb-7">
+        <a href="home">
+         <div className="w-[400px] items-center mt-12 mb-7">
           <button className="text-white font-bold bg-primary w-full max-w-md h-12 rounded-xl text-header3" type="submit">Masuk</button>
         </div>
+        </a>
 
         <footer className="w-full text-center text-primary text-[15px] mt-2">
           <p>Belum Punya Akun? 

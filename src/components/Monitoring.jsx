@@ -1,6 +1,7 @@
 import React from 'react';
 import profilePic from '../assets/jimmy.png';
 import Footer from '../components/Footer';
+import OrtuNavbar from '../components/OrtuNavbar';
 
 const ChildMonitoringRecord = () => {
   const records = [
@@ -11,6 +12,7 @@ const ChildMonitoringRecord = () => {
 
   return (
     <childmonitor>
+      <OrtuNavbar />
     <div className="w-full h-full flex flex-col items-center bg-gray-100 py-10">
       <div className="text-2xl font-bold mb-8">Child Monitoring Record</div>
       <div className="space-y-4 w-full max-w-screen-xl">

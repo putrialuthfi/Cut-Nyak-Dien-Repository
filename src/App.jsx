@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './index.css';
 import Navbar from "./components/Navbar";
+import OrtuNavbar from "./components/OrtuNavbar";
 import Home from "./components/Home";
 import StuntingDetection from "./components/StuntingDetection";
 import InformasiPosyandu from "./components/InformasiPosyandu";
@@ -16,13 +17,16 @@ import FormInputJadwal from "./components/FormInputJadwal";
 import FormDiskusi from "./components/FormDiskusi";
 import Monitoring2 from './components/Monitoring_Page2';
 import SignIn from './components/SignIn';
+import OrtuHome from './components/OrtuHome';
+import ProfileOrtu from './components/ProfileOrtu';
+import ProfileAnak from './components/ProfileAnak';
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<OrtuHome />} />
         <Route path="/formInputjadwal" element={<FormInputJadwal />} />
         <Route path="/formInputchildmon" element={<FormInputChildMon />} />
         <Route path="/popup" component={<PopupInputChild/>} />
@@ -37,6 +41,8 @@ function App() {
         <Route path="/monitoring" element={<Monitoring />} />
         <Route path="/formDiskusi" element={<FormDiskusi />} />
         <Route path="/monitoring2" element={<Monitoring2 />} />
+        <Route path="/profileOrtu" element={<ProfileOrtu />} />
+        <Route path="/profileAnak" element={<ProfileAnak />} />
       </Routes>
     </Router>
   );

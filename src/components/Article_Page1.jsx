@@ -1,5 +1,10 @@
+import OrtuNavbar from '../components/OrtuNavbar';
+import Footer from '../components/Footer';
+
 const Article_Page1 = () => {
   return (
+    <article>
+      <OrtuNavbar />
     <div className="min-h-screen bg-white flex mx-10 my-10">
       <div className="md:w-full text-left">
         <h1 className="font-poppinsSemiBold text-header1">Informasi Hari Ini</h1>
@@ -63,6 +68,8 @@ const Article_Page1 = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </article>
   );
 };
 
