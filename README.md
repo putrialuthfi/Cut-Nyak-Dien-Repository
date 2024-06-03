@@ -18,22 +18,22 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Article Page 1 (Wildan)
 - [ ] Article Page 2 (Wildan)
 - [x] Tentang Kami (Rangga)
-- [ ] Sign In Page (Riska)
+- [x] Sign In Page (Riska)
 - [x] Sign Up Page (Luthfi)
-- [ ] Profil Admin 
+- [ ] Profil Admin ( Riska )
 - [x] Form Input Jadwal Posyandu (Luthfi)
 - [ ] Popup sukses upload jadwal posyandu
 - [x] Form Child Monitoring (Luthfi)
 - [ ] Popup result monitoring (luthfi)
 - [ ] Form Input Artikel/Publish artikel (luthfi)
-- [ ] Popup sukses upload artikel
+- [ ] Popup sukses upload artikel (Adisty)
 - [x] Forum Discussion Page (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 2 (Rangga)
-- [ ] Profil Orangtua (Satria)
-- [ ] Profil Anak (Satria)
+- [x] Profil Orangtua (Rangga)
+- [x] Profil Anak (Rangga)
 - [x] Page publish forum diskusi (Rangga)
-- [ ] Pop-up Profil Tenaga Kesehatan
+- [ ] Pop-up Profil Tenaga Kesehatan (Adisty)
 
 ## HOW TO CLONE REPOSITORY
 
