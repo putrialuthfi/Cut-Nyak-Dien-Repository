@@ -20,6 +20,7 @@ import SignIn from './components/SignIn';
 import OrtuHome from './components/OrtuHome';
 import ProfileOrtu from './components/ProfileOrtu';
 import ProfileAnak from './components/ProfileAnak';
+import ProfileAdmin from './components/ProfileAdmin';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/monitoring2" element={<Monitoring2 />} />
         <Route path="/profileOrtu" element={<ProfileOrtu />} />
         <Route path="/profileAnak" element={<ProfileAnak />} />
+        <Route path="/profileAdmin" element={<ProfileAdmin />} />
       </Routes>
     </Router>
   );
