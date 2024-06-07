@@ -25,7 +25,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [ ] Popup sukses upload jadwal posyandu
 - [x] Form Child Monitoring (Luthfi)
 - [ ] Popup result monitoring (luthfi)
-- [ ] Form Input Artikel/Publish artikel (luthfi)
+- [x] Form Input Artikel/Publish artikel (luthfi)
 - [ ] Popup sukses upload artikel (Adisty)
 - [x] Forum Discussion Page (Rangga)
 - [x] Monitoring Record Page/Result Monitoring 1 (Rangga)
