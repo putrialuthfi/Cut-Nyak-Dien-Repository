@@ -4,7 +4,7 @@ const signUp = () => {
   return (
     <div className="flex flex-col lg:flex-row">
       {/* Left Section (Image) */}
-      <div className="w-full lg:w-1/2 bg-gray-100 flex items-center justify-center" style={{ height: '90vh' }}>
+      <div className="w-full lg:w-1/2 bg-gray-100 flex items-center justify-center" style={{ height: '100vh' }}>
         <img
           src="/src/assets/img-signup.png"
           alt="Illustration SignUp Posyandu-Line"
@@ -19,6 +19,15 @@ const signUp = () => {
           <h1 className="text-2xl font-bold mb-4 text-[#135D66]">Posyandu-Line</h1>
         </div>
         <div className="mb-10">
+        <div className="mb-4">
+            <input
+              type="kodereg"
+              id="kodereg"
+              name="kodereg"
+              placeholder="Masukan Kode Registrasi Kader"
+              className="w-full border rounded p-2"
+            />
+          </div>
           <div className="mb-4">
             <input
               type="email"
