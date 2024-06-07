@@ -5,7 +5,7 @@ import '/src/App.css';
 const FormInputArtikel = () => {
     return(
         <div className="items-center justify-center w-full h-full bg-gray-100">
-            <div className="w-full grid grid-cols-2 gap-4 mb-4 p-10">
+            <div className="w-full grid grid-cols-2 gap-4 mb-4 px-8">
                 <div className="col-span-2 md:col-span-1 mb-4">
                     <div className="text-left">
                         <h1 className="text-2xl font-bold mb-2">Masukan Judul Artikel</h1>
@@ -20,7 +20,7 @@ const FormInputArtikel = () => {
                     </Link>
                 </div>
             </div>
-            <form className="p-8 w-full h-full mt-4">
+            <form className="w-full h-full mt-4 pr-8 pl-8">
                 <input id="deskripsi" type="text" className="w-full" style={{ height: '600px' }} />
             </form>
         </div>
