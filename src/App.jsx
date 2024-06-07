@@ -14,6 +14,7 @@ import ForumDiskusi from "./components/ForumDiskusi";
 import AboutUs from "./components/AboutUs";
 import Monitoring from"./components/Monitoring";
 import FormInputJadwal from "./components/FormInputJadwal";
+import FormInputArtikel from "./components/FormInputArtikel";
 import FormDiskusi from "./components/FormDiskusi";
 import Monitoring2 from './components/Monitoring_Page2';
 import SignIn from './components/SignIn';
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<OrtuHome />} />
+        <Route path="/formInputartikel" element={<FormInputArtikel />} />
         <Route path="/formInputjadwal" element={<FormInputJadwal />} />
         <Route path="/formInputchildmon" element={<FormInputChildMon />} />
         <Route path="/popup" component={<PopupInputChild/>} />
