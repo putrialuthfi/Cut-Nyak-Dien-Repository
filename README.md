@@ -22,9 +22,9 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Sign Up Page (Luthfi)
 - [ ] Profil Admin ( Riska )
 - [x] Form Input Jadwal Posyandu (Luthfi)
-- [ ] Popup sukses upload jadwal posyandu
+- [x] Popup sukses upload jadwal posyandu (luthfi)
 - [x] Form Child Monitoring (Luthfi)
-- [ ] Popup result monitoring (luthfi)
+- [x] Popup result monitoring (luthfi)
 - [x] Form Input Artikel/Publish artikel (luthfi)
 - [ ] Popup sukses upload artikel (Adisty)
 - [x] Forum Discussion Page (Rangga)

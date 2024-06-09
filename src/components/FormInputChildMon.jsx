@@ -6,6 +6,15 @@ import '/src/App.css';
 
 const FormInputChildMon = () => {
   const [selectedDate, setSelectedDate] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleUploadClick = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <div className="flex items-center justify-center w-full bg-gray-100">
@@ -61,16 +70,40 @@ const FormInputChildMon = () => {
         {/* Buttons */}
         <div className="flex justify-end space-x-4">
           <Link to="#">
-            <button className="bg-white text-[#135D66] py-2 px-4 rounded-[14px]  hover:bg-[#135D66] hover:text-white" style={{ border: '1px solid #135D66' }}>
+            <button className="bg-white text-[#135D66] py-2 px-4 rounded-[14px] hover:bg-[#135D66] hover:text-white" style={{ border: '1px solid #135D66' }}>
                + Tambah Data Lain
             </button>
           </Link>
-          <Link to="/PopupInputChild">
-            <button className="bg-[#135D66] text-white py-2 px-4 rounded-[14px] hover:bg-opacity-90">
-              Upload Data
-            </button>
-          </Link>
+          <button
+            type="button"
+            onClick={handleUploadClick}
+            className="bg-[#135D66] text-white py-2 px-4 rounded-[14px] hover:bg-opacity-90"
+          >
+            Upload Data
+          </button>
         </div>
+        {showPopup && (
+          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+            <div className="bg-white p-6 rounded shadow-md relative max-w-sm w-full">
+              <button
+                onClick={closePopup}
+                className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
+              >
+                &times;
+              </button>
+              <div className="text-center">
+                <br />
+                <h2 className="text-xl font-bold mb-4">Yeayy, Data berhasil Diupload!</h2>
+                <button
+                  onClick={closePopup}
+                  className="bg-[#135D66] text-white py-2 px-4 rounded hover:bg-opacity-90"
+                >
+                  Oke
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </form>
     </div>
   );
