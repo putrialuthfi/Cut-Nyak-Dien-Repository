@@ -93,7 +93,7 @@ const FormInputChildMon = () => {
               </button>
               <div className="text-center">
                 <br />
-                <h2 className="text-xl font-bold mb-4">Yeayy, Data berhasil Diupload!</h2>
+                <h2 className="text-xl font-bold mb-4">Data Child Monitoring Record Berhasil Diupload</h2>
                 <button
                   onClick={closePopup}
                   className="bg-[#135D66] text-white py-2 px-4 rounded hover:bg-opacity-90"

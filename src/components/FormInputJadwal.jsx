@@ -73,7 +73,7 @@ const FormInputJadwal = () => {
 
       {showPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded shadow-md relative max-w-sm w-full">
+          <div className="bg-white p-4 rounded shadow-md relative max-w-sm w-full">
             <button
               onClick={closePopup}
               className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
@@ -82,7 +82,7 @@ const FormInputJadwal = () => {
             </button>
             <div className="text-center">
               <br />
-              <h2 className="text-xl font-bold mb-4">Yeayy, Data berhasil Diupload!</h2>
+              <h2 className="text-xl font-bold mb-4">Informasi Jadwal Berhasil Diupload</h2>
               <button
                 onClick={closePopup}
                 className="bg-[#135D66] text-white py-2 px-4 rounded hover:bg-opacity-90"
