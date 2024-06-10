@@ -48,7 +48,7 @@ const Profile = () => {
           </div>
         </div>
       )}
-    </div>  
+    </div>   
                     
 
                     {/* <div className=' flex flex-col h-[380px]'>
