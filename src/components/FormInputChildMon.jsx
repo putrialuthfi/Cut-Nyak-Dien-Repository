@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import Navbar from "./Navbar";
 import '/src/App.css';
+import Footer from "./Footer";
 
 const FormInputChildMon = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -17,8 +19,10 @@ const FormInputChildMon = () => {
   };
 
   return (
+    <forminputchildmon>
+    <Navbar />
     <div className="flex items-center justify-center w-full bg-gray-100">
-      <form className="bg-white p-6 rounded shadow-md w-full max-w-[646px] mb-10 mt-10">
+      <form className="bg-white p-9 rounded shadow-md w-full max-w-[646px] mb-10 mt-10">
         {/* Judul dan Subjudul */}
         <div className="mb-6 text-left">
           <h1 className="text-2xl font-bold mb-2">Form Input Data Child Monitoring Record</h1>
@@ -106,6 +110,8 @@ const FormInputChildMon = () => {
         )}
       </form>
     </div>
+    <Footer />
+    </forminputchildmon>
   );
 }
 

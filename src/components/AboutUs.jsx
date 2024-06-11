@@ -1,13 +1,15 @@
 import React from 'react';
 import groupPhoto from '../assets/aboutus.png';
 import Footer from "./Footer";
-import OrtuNavbar from '../components/OrtuNavbar';
+import Navbar from "./Navbar";
+// import OrtuNavbar from '../components/OrtuNavbar';
 
 const AboutUs = () => {
   return (
     <aboutus>
-      <OrtuNavbar />
-    <div className="w-full h-full flex flex-wrap place-items-center pt-[100px] pb-[100px] px-[100px]">
+      {/* <OrtuNavbar /> */}
+      <Navbar />
+    <div className="w-full h-full flex flex-wrap place-items-center pt-[70px] pb-[100px] px-[100px]">
     <div className="flex flex-col lg:flex-row items-center justify-between p-8">
       <div className="flex justify-center lg:w-1/2">
         <img

@@ -1,15 +1,19 @@
 import React from 'react';
 import '../App.css';
+import Navbar from './Navbar';
+import Footer from './Footer'
 
 const informasiPosyandu2 = () => {
   return (
+    <informasiposyandu2>
+    <Navbar />
     <div className="profile-section w-full gap-5 md:px-10">
       <div className="flex mt-10">
         <div className="w-1/2 flex justify-center">
           <img
             src="src/assets/profil-dahlia1.jpeg"
             alt="Posyandu Dahlia 1"
-            className="profile-image w-full h-auto"
+            className="profile-image w-full h-65 object-cover"
           />
         </div>
         <div className="profile-details text-left w-1/2 leading-8 p-4">
@@ -150,6 +154,8 @@ const informasiPosyandu2 = () => {
         </div>
       </div>
      </div> 
+     <Footer />
+     </informasiposyandu2>
   );
 };
 
