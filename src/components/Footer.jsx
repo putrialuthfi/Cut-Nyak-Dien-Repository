@@ -6,11 +6,11 @@ export default function App() {
     <footer
       className="bg-[#76ABAE] lg:text-left w-full h-full">
       {/* <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. --> */}
-      <div className="pr-10 text-center md:text-left flex md:justify-end w-full h-full">
-      <img
+      <div className="pr-10 pt-4 text-center md:text-left flex md:justify-end w-full h-full">
+        <img
             src="./src/assets/footerbg.png"
             alt="Baby"
-            className="pr-[350px]"
+            className="pr-[150px]"
           />
         <div className="grid-1 grid md:grid-cols-1 lg:grid-cols-2 items-center">
           {/* <!-- Informasi section --> */}
@@ -20,16 +20,16 @@ export default function App() {
               Informasi
             </h6>
             <p className="mb-2">
-              <a className="text-black"
+              <a href="/aboutUs" className="text-black"
               >Tentang Kami</a>
             </p>
             <p className="mb-2">
-              <a className="text-black"
+              <a href="#testimonials" className="text-black"
               >Layanan</a>
             </p>
             <p className="mb-2">
-              <a className="text-black"
-              >Blog</a>
+              <a href="/Article_Page1" className="text-black"
+              >Artikel</a>
             </p>
           </div>
           {/* <!-- Useful links section --> */}
@@ -39,15 +39,15 @@ export default function App() {
               Layanan
             </h6>
             <p className="mb-2 text-nowrap">
-              <a className="text-black"
+              <a href="/informasiposyandu" className="text-black"
               >Informasi Posyandu</a>
             </p>
             <p className="mb-2 text-nowrap">
-              <a className="text-black"
+              <a href="/stuntingDetection" className="text-black"
               >Stunting Detection</a>
             </p>
             <p className="mb-2 text-nowrap">
-              <a className="text-black"
+              <a href="/" className="text-black"
               >Child Monitoring Record</a>
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function App() {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-[#135D66] p-3 text-center text-white">
+      <div className="bg-[#135D66] p-3 text-center text-white" style={{ fontSize: '12px' }}>
         <span>© 2024 Posyandu-Line. All rights reserved.</span>
       </div>
     </footer>
