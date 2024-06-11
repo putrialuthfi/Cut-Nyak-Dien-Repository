@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <section id='home'>
       {/* Flex Container */}
-      <div className='w-full flex flex-col-reverse items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row h-[721px] bg-cover' style={{backgroundImage: `url(${BackgroundImage})`}}>
+      <div className='w-full flex flex-col-reverse items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row h-[532px] bg-cover' style={{backgroundImage: `url(${BackgroundImage})`}}>
         {/* Left Item */}
-        <div className='flex flex-col mb-32 space-y-6 md:w-1/2'>
+        <div className='flex flex-col mb-22 space-y-6 md:w-1/2'>
           <h1 className='max-w-xl text-[55px] font-bold text-center md:text-left text-[#135D66] pl-11'>
             Stunting Detection
           </h1>
