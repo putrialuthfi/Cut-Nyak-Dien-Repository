@@ -8,16 +8,20 @@ function SignIn() {
 
   return (
     <div className="flex h-screen flex-wrap box-border">
-      <div className="w-full md:w-1/2 bg-gray-100 flex items-center justify-center">
-        <img src={image} alt="" className="w-full h-auto object-cover" />
+      {/* <div className="w-full md:w-1/2 bg-gray-100 flex items-center justify-center"> */}
+      <div className="w-full lg:w-1/2 bg-gray-100 flex items-center justify-center" style={{ height: '100vh' }}>
+        {/* <img src={image} alt="" className="w-full h-auto object-cover" /> */}
+        <img src={image} alt=""/>
       </div>
 
-      <div className="w-full md:w-1/2 bg-white p-10 flex flex-col items-center">
+      <div className="w-full md:w-1/2 bg-white p-4 flex flex-col items-center">
         <div className="px-6 md:px-12 pt-12 pb-10 text-center">
-          <h1 className="text-header1 text-2xl font-bold mb-4 text-gray-400">
+        <h1 className="text-2xl font-bold mb-1 text-[#9D9D9C]">Selamat Datang di</h1>
+        <h1 className="text-2xl font-bold mb-4 text-[#135D66]">Posyandu-Line</h1>
+          {/* <h1 className="text-header1 text-2xl font-bold mb-4 text-gray-400">
             Selamat Datang di <br />
             <span className="text-primary pt-8">Posyandu-Line</span>
-          </h1>
+          </h1> */}
         </div>
 
         {/* Toggle Button */}
@@ -30,15 +34,20 @@ function SignIn() {
           <AdminForm />
         )}
 
-        {/* Button */}
          {/* Button */}
-        <a href="home">
-         <div className="w-[400px] items-center mt-12 mb-7">
-          <button className="text-white font-bold bg-primary w-full max-w-md h-12 rounded-xl text-header3" type="submit">Masuk</button>
+        <a href="/signIn">
+         <div className="w-[400px] items-center mt-4 mb-2">
+         <button
+            type="button"
+            className="w-full border p-2.5 bg-[#135D66] text-white rounded-md font-semibold mb-2"
+          >
+            Masuk
+        </button>
+          {/* <button className="text-white font-bold bg-primary w-full max-w-md h-12 rounded-xl text-header3" type="submit">Masuk</button> */}
         </div>
         </a>
 
-        <footer className="w-full text-center text-primary text-[15px] mt-2">
+        <footer className="w-full text-center text-primary text-[15px] mt-4">
           <p>Belum Punya Akun? 
             <a href="/signUp">
             <span className="font-bold ml-2">Daftar Disini</span>
