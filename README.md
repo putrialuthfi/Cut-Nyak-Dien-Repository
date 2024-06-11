@@ -33,7 +33,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Profil Orangtua (Rangga)
 - [x] Profil Anak (Rangga)
 - [x] Page publish forum diskusi (Rangga)
-- [ ] Pop-up Profil Tenaga Kesehatan (Adisty) *backup luthfi
+- [x] Pop-up Profil Tenaga Kesehatan (Adisty) *backup luthfi
 
 ## HOW TO CLONE REPOSITORY
 
