@@ -14,13 +14,13 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Informasi Posyandu Page 1 (Luthfi)
 - [x] Informasi Posyandu Page 2 (Luthfi)
 - [x] Stunting Detection Page (Rendy)
-- [ ] Popup Stunting Detection (Rendy)
+- [ ] Popup Stunting Detection (Rendy) *backup Riska
 - [x] Article Page 1 (Wildan)
-- [ ] Article Page 2 (Wildan)
+- [ ] Article Page 2 (Wildan) *backup Riska
 - [x] Tentang Kami (Rangga)
 - [x] Sign In Page (Riska)
 - [x] Sign Up Page (Luthfi)
-- [ ] Profil Admin ( Riska )
+- [x] Profil Admin ( Riska )
 - [x] Form Input Jadwal Posyandu (Luthfi)
 - [x] Popup sukses upload jadwal posyandu (luthfi)
 - [x] Form Child Monitoring (Luthfi)
