@@ -14,7 +14,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Informasi Posyandu Page 1 (Luthfi)
 - [x] Informasi Posyandu Page 2 (Luthfi)
 - [x] Stunting Detection Page (Rendy)
-- [ ] Popup Stunting Detection (Rendy) *backup Riska
+- [x] Popup Stunting Detection (Rendy) *backup Riska
 - [x] Article Page 1 (Wildan)
 - [ ] Article Page 2 (Wildan) *backup Riska
 - [x] Tentang Kami (Rangga)
