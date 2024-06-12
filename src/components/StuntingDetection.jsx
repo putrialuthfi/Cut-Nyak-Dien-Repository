@@ -1,26 +1,26 @@
-import OrtuNavbar from '../components/OrtuNavbar';
+import Navbar from "./Navbar";
 import Footer from '../components/Footer';
 
 const StuntingDetection = () => {
   return (
     <stunting>
-      <OrtuNavbar />
+    <Navbar />
     <div className="min-h-screen bg-white flex flex-col items-center">
-      <main className="flex flex-col md:flex-row mt-8 w-full max-w-6xl bg-white rounded-lg overflow-hidden">
+      <main className="flex flex-col md:flex-row m-8 w-full max-w-6xl bg-white rounded-lg overflow-hidden">
         <div className="md:w-1/2 p-6 flex items-center justify-center sm:hidden md:block">
-          <img src="./src/assets/baby_img.png" alt="Baby" className="rounded-lg w-full h-full object-cover" />
+          <img src="./src/assets/baby_img.png" alt="Baby" className="rounded-lg w-full" style={{height:'1030px'}} />
         </div>
         <div className="md:w-1/2 p-6">
-          <h2 className="text-2xl font-bold mb-4 text-center pb-14">Stunting Detection Page</h2>
-          <div className="flex justify-center items-center pb-16">
-            <img src="path/to/profile-pic.jpg" alt="Admin" className="w-10 h-10 rounded-full" />
+          <h2 className="text-2xl font-bold text-center">Stunting Detection Page</h2>
+          <div className="flex justify-center items-center py-8">
+            <img src="./src/assets/jimmy.png" alt="profile photo child" className="w-10 h-10 rounded-full" />
             <span className="ml-7">
               <a href="" className="font-bold hover:text-primary underline">
                 Edit Photo
               </a>
             </span>
           </div>
-          <div className="bg-third rounded-xl ">
+          <div className="bg-third rounded-xl">
             <form className="space-y-7 mx-8 py-8">
               <div>
                 <label className="block text-sm font-medium text-gray-700">Nama Lengkap</label>

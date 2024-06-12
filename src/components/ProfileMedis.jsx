@@ -71,8 +71,8 @@ const Profile = () => {
 
     return (
         <section id='profile'>
-            <h2 className='text-4xl font-bold text-center pt-12'>Profil Tenaga Kesehatan</h2>
-            <p className='text-center pt-2 bg-[#F9F9F9]'>Kenali lebih dekat para tenaga kesehatan yang berkontribusi langsung di Posyandu kita</p>
+            <h2 className='text-3xl font-bold text-center pt-12'>Profil Tenaga Kesehatan</h2>
+            <p className='text-center pt-2'>Kenali lebih dekat para tenaga kesehatan yang berkontribusi langsung di Posyandu kita</p>
             <div className='flex items-center justify-center container mx-auto w-[1519px] h-[500px]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-5'>
                     {profiles.map((profile, index) => (
@@ -81,7 +81,7 @@ const Profile = () => {
                                 <div className='rounded-xl overflow-hidden'>
                                     <img className="w-270 h-240" src={profile.image} alt={profile.name}></img>
                                 </div>
-                                <h5 className='text-[23px] font-medium mt-3'>{profile.name}</h5>
+                                <p className='mt-6 text-[18px] font-medium mt-3'>{profile.name}</p>
                                 <p className='text-slate-500 text-[15px]'>{profile.posyandu}</p>
                                 <button 
                                     onClick={() => openModal(profile)}

@@ -43,10 +43,10 @@ const Courses = () => {
     ]
 }
   return (
-    <section className='w-full h-full bg-white py-10 p-4'>
+    <section className='w-full h-full bg-white p-4'>
         <div className='md:max-w-[1100px] m-auto max-w-[400px]'>
-            <h1 className='py-4 text-3xl font-bold text-center'>Informasi Hari Ini</h1>
-            <p className='text-[#6D737A] py-3 text-center'>Cari tahu informasi menarik dan penting bagi kesehatan buah hati anda. Penuhi kebutuhannya dengan gizi dan nutrisi yang tercukupi demi tumbuh kembangnya yang optimal.</p>
+            <h1 className='text-3xl font-bold text-center'>Informasi Hari Ini</h1>
+            <p className='text-[#6D737A] pt-2 pb-8 text-center'>Cari tahu informasi menarik dan penting bagi kesehatan buah hati anda. Penuhi kebutuhannya dengan gizi dan nutrisi <br /> yang tercukupi demi tumbuh kembangnya yang optimal.</p>
           </div>
           <a href="/article_Page1">
         <div className='md:max-w-[1100px] m-auto max-w-[400px] gap-5'>
