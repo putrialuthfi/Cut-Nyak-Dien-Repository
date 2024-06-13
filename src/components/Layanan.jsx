@@ -5,43 +5,37 @@ const Layanan = () => {
   return (
     <section id='testimonials'>
       {/* Container */}
-      <div className='mx-auto text-center bg-cover w-full h-full pb-10' style={{backgroundImage: `url(${BgLayanan})`}}>
+      <div className='mx-auto text-center bg-cover w-full h-full pb-10' style={{ backgroundImage: `url(${BgLayanan})` }}>
         {/* Heading */}
-        <h2 className='text-3xl font-bold text-center pt-12'>Layanan <span className='text-[#135D66]'>Posyandu-Line</span></h2>
+        <h2 className='text-3xl font-bold text-center pt-12'>
+          Layanan <span className='text-[#135D66]'>Posyandu-Line</span>
+        </h2>
         {/* Container Layanan */}
-        <div className='flex mx-auto justify-center mt-14 md:flex-row md:space-x-12 h-[320px] w-[850px]'>
+        <div className='flex flex-col md:flex-row justify-center items-center mx-auto mt-14 space-y-8 md:space-y-0 md:space-x-12 w-full max-w-4xl px-6 md:px-0 min-h-[320px] md:min-h-[320px]'>
           {/* Informasi Posyandu */}
-          <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
-          <img className="w-140 h-30" src="src/assets/InformasiPosyandu.png"></img>
-          <Link to="/informasiPosyandu">
-            <h5 className='text-[20px] font-semibold pt-8 text-nowrap pb-3'>Informasi Posyandu</h5>
-            <p className='text-sm text-darkGrayishBlue'>
-            Temukan jadwal dan lihat kegiatan. Akses dengan mudah!
+          <Link to="/informasiPosyandu" className='flex flex-col items-center p-6 space-y-4 rounded-lg w-full md:w-1/3 bg-[#135D66] text-white shadow-md'>
+            <img className="w-32 h-32 md:w-140 md:h-30" src="src/assets/InformasiPosyandu.png" alt="Informasi Posyandu" />
+            <h5 className='text-[20px] font-semibold pt-4'>Informasi Posyandu</h5>
+            <p className='text-sm text-darkGrayishBlue text-center md:text-center'>
+              Temukan jadwal dan lihat kegiatan. Akses dengan mudah!
             </p>
-            </Link>
-          </button>
-
+          </Link>
           {/* Stunting Detection */}
-          <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
-          <img className="w-140 h-30" src="src/assets/StuntingDetection.png"></img>
-          <Link to="/stuntingDetection">
-            <h5 className='text-[20px] font-semibold pt-8 pb-3 text-nowrap'>Stunting Detection</h5>
-            <p className='text-sm text-darkGrayishBlue'>
-            Taklukkan stunting, jaga masa depan anak-anak. Cek sekarang!
+          <Link to="/stuntingDetection" className='flex flex-col items-center p-6 space-y-4 rounded-lg w-full md:w-1/3 bg-[#135D66] text-white shadow-md'>
+            <img className="w-32 h-32 md:w-140 md:h-30" src="src/assets/StuntingDetection.png" alt="Stunting Detection" />
+            <h5 className='text-[20px] font-semibold pt-4'>Stunting Detection</h5>
+            <p className='text-sm text-darkGrayishBlue text-center md:text-center'>
+              Taklukkan stunting, jaga masa depan anak-anak. Cek sekarang!
             </p>
-            </Link>
-          </button>
-
+          </Link>
           {/* Monitoring Record */}
-          <button className='flex flex-col items-center p-6 space-y-1 rounded-lg md:w-1/3 text-white bg-[#135D66] '>
-          <img className="w-140 h-30" src="src/assets/Monitoring Record.png"></img>
-          <Link to="/monitoring">
-            <h5 className='text-[20px] font-semibold pt-8 pb-3 text-nowrap'>Monitoring Record</h5>
-            <p className='text-sm text-darkGrayishBlue'>
-            Simpan jejak kesehatan dengan mudah, akses informasi penting kapan saja.
+          <Link to="/monitoring" className='flex flex-col items-center p-6 space-y-4 rounded-lg w-full md:w-1/3 bg-[#135D66] text-white shadow-md'>
+            <img className="w-32 h-32 md:w-140 md:h-30" src="src/assets/Monitoring Record.png" alt="Monitoring Record" />
+            <h5 className='text-[20px] font-semibold pt-4'>Monitoring Record</h5>
+            <p className='text-sm text-darkGrayishBlue text-center md:text-center'>
+              Simpan jejak kesehatan dengan mudah, akses informasi dimanapun.
             </p>
-            </Link>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
