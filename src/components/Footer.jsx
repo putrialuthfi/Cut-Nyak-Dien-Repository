@@ -8,8 +8,8 @@ export default function App() {
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start">
         
         {/* Section: Image */}
-        <div className="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0">
-          <img src={ImageBg} alt="Baby" className="w-full h-auto" />
+        <div className="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0 mr-40">
+          <img src={ImageBg} alt="Baby" className="" style={{width:'50vh',height:'25vh'}} />
         </div>
 
         {/* Section: Informasi */}
@@ -29,7 +29,7 @@ export default function App() {
         </div>
 
         {/* Section: Layanan */}
-        <div className="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0">
+        <div className="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0 pr-10">
           <h6 className="font-bold text-[18px] mb-2">Layanan</h6>
           <ul>
             <li className="mb-2">
@@ -45,7 +45,7 @@ export default function App() {
         </div>
 
         {/* Section: Contact */}
-        <div className="w-full md:w-1/3 lg:w-1/4">
+        <div className="w-full md:w-1/3 lg:w-1/">
           <h6 className="font-bold text-[18px] mb-2">Contact</h6>
           <ul>
             <li className="mb-2 flex items-center">
