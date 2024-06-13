@@ -73,22 +73,23 @@ const Profile = () => {
         <section id='profile'>
             <h2 className='text-3xl font-bold text-center pt-12'>Profil Tenaga Kesehatan</h2>
             <p className='text-center pt-2'>Kenali lebih dekat para tenaga kesehatan yang berkontribusi langsung di Posyandu kita</p>
-            <div className='flex items-center justify-center container mx-auto w-[1519px] h-[500px]'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-5'>
+            <div className='container mx-auto flex items-center justify-center w-full h-full py-12'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                     {profiles.map((profile, index) => (
-                        <div key={index} className='rounded-xl shadow-lg'>
-                            <div className='flex flex-col h-[380px]'>
-                                <div className='rounded-xl overflow-hidden'>
-                                    <img className="w-270 h-240" src={profile.image} alt={profile.name}></img>
+                        <div key={index} className='flex flex-col items-center justify-center rounded-xl shadow-lg p-5 h-96'>
+                            <div className='w-full flex-grow flex flex-col items-center'>
+                                <div className='rounded-xl overflow-hidden mb-4'>
+                                    <img className="w-full h-48 object-cover" src={profile.image} alt={profile.name}></img>
                                 </div>
-                                <p className='mt-6 text-[18px] font-medium mt-3'>{profile.name}</p>
-                                <p className='text-slate-500 text-[15px]'>{profile.posyandu}</p>
-                                <button 
-                                    onClick={() => openModal(profile)}
-                                    className='mx-auto text-center border mt-5 border-stone-950 text-black rounded-lg font-semibold h-[35px] w-[200px] flex items-center justify-center'>
-                                    Lihat Profil
-                                </button>
+                                <p className='text-xl font-medium mt-3'>{profile.name}</p>
+                                <p className='text-slate-500 text-base'>{profile.posyandu}</p>
                             </div>
+
+                            <button 
+                                onClick={() => openModal(profile)}
+                                className='mx-auto text-center border mt-3 border-stone-950 text-black rounded-lg font-semibold h-[35px] w-[200px] flex items-center justify-center'>
+                                Lihat Profil
+                            </button>
                         </div>
                     ))}
                 </div>
@@ -96,20 +97,20 @@ const Profile = () => {
             {isOpen && selectedProfile && (
                 <div className='fixed inset-0 flex items-center justify-center z-50'>
                     <div className='absolute inset-0 bg-gray-600 bg-opacity-50' onClick={closeModal}></div>
-                    <div className='relative z-50 p-5 border w-[600px] shadow-lg bg-white rounded-md flex'>
+                    <div className='relative z-50 p-5 border w-96 shadow-lg bg-white rounded-md flex'>
                         <div className='mr-5 flex-shrink-0'>
-                            <img className="w-32 h-32 rounded-md" src={selectedProfile.image} alt={selectedProfile.name}></img>
+                            <img className="w-32 h-32 rounded-md object-cover" src={selectedProfile.image} alt={selectedProfile.name}></img>
                         </div>
                         <div>
                             <button 
                                 onClick={closeModal} 
-                                className='absolute top-0 right-0 m-2 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center'>
+                                className='absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center focus:outline-none'>
                                 &times;
                             </button>
-                            <h3 className='text-lg leading-6 font-medium text-gray-900'>{selectedProfile.name}</h3>
+                            <h3 className='text-lg font-medium text-gray-900'>{selectedProfile.name}</h3>
                             <p className='text-slate-500'>{selectedProfile.posyandu}</p>
-                            <div className='mt-2'>
-                                <p className='text-sm text-gray-500'>{selectedProfile.detail}</p>
+                            <div className='mt-2 text-sm text-gray-500'>
+                                {selectedProfile.detail}
                             </div>
                         </div>
                     </div>
