@@ -1,76 +1,90 @@
-// import OrtuNavbar from '../components/OrtuNavbar';
 import Navbar from "./Navbar";
 import Footer from '../components/Footer';
 
 const Article_Page1 = () => {
   return (
     <article>
-      {/* <OrtuNavbar /> */}
-    <Navbar />
-    <div className="min-h-screen bg-white flex mx-10 my-10">
-      <div className="md:w-full text-left">
-        <h1 className="font-poppinsSemiBold text-header1">Informasi Hari Ini</h1>
-        <p className="font-poppins text-body tracking-normal">Cari tahu informasi menarik dan penting bagi kesehatan buah hati anda. </p>
-        <div className="grid grid-rows-3 lg:grid-cols-3 sm:grid-cols-1 my-10 gap-y-5 gap-x-12">
-          {/*Grid1*/}
-          {/*Item1*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="broder border-2 border-black rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+      <Navbar />
+      <div className="min-h-screen bg-white mx-10 my-10">
+        <div className="text-center">
+          <h1 className="font-poppinsSemiBold text-header1">Informasi Hari Ini</h1>
+          <p className="font-poppins text-body tracking-normal">Cari tahu informasi menarik dan penting bagi kesehatan buah hati anda.</p>
+        </div>
+        <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-y-5 gap-x-12 my-10">
+          {/* Item 1 */}
+          <div className="rounded-xl bg-white flex flex-col p-4 border-1 shadow-md">
+            <img src="/src/assets/Rectangle 39.png" alt="brokoli" className=" rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Manfaat Konsumsi Brokoli untuk Anak</p>
+            <p className="text-left font-poppins text-body mt-1 mb-5">Beberapa anak tidak suka brokoli karena rasanya langu. Namun, brokoli sebenarnya punya banyak manfaat!</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Item1*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 2 */}
+          <div className="rounded-xl bg-white flex flex-col p-4 border-1 shadow-md">
+            <img src="/src/assets/card-artikel-2.png" alt="susu" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Peran Susu Bagi Pertumbuhan Anak</p>
+            <p className="text-left font-poppins text-body mt-1">Kenali peran baik susu dalam proses pertumbuhan buah hati Anda!</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Item1*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
-          </div>
-          {/*Grid2*/}
-          {/*Item2*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 3 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 36.png" alt="obat" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Tips Ajari Anak Minum Obat Pil atau Tablet</p>
+            <p className="text-left font-poppins text-body mt-1">Banyak anak yang kesulitan minum obat pil atau tablet. Bagaimana cara...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Item2*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 4 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 37.png" alt="masker" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Dokter Anjurkan Anak Pakai Masker untuk Cegah Penyakit Saat Pancaroba</p>
+            <p className="text-left font-poppins text-body mt-1 mb-5">Musim pancaroba telah tiba! Dokter menganjurkan anak untuk pakai mask...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Item2*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 5 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 38.png" alt="semangka" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Nutrisi Yang Terkandung Dalam Buah Semangka</p>
+            <p className="text-left font-poppins text-body mt-1">Selain manis, ternyata banyak nutrisi dan vitamin yang terkandung di dala...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Grid3*/}
-          {/*Item3*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 6 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 40.png" alt="anak aktif" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Benarkah Anak Bergerak Aktif Bisa Jadi Cerdas?</p>
+            <p className="text-left font-poppins text-body mt-1">Orang tua kadang kerepotan jika anaknya banyak bergerak. Namun, be...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Item3*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 7 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 35.png" alt="kebiasaan baik" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">7 Kebiasaan Baik Orang Tua Yang Disukai Anak</p>
+            <p className="text-left font-poppins text-body mt-1 mb-5">Berdasarkan psikologis anak, terdapat tujuh kebiasaan baik orang tua yang d...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
 
-          {/*Item3*/}
-          <div className="rounded-xl bg-white">
-            <img src="/src/assets/Rectangle 35.png" alt="brokoli" className="rounded-lg object-cover" />
-            <p className="text-left font-poppinsSemiBold text-body">Manfaat Konsumsi Brokoli untuk Anak</p>
+          {/* Item 8 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 97.png" alt="imunisasi" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Dokter Melakukan Imunisasi Pada Anak Berusia Dini</p>
+            <p className="text-left font-poppins text-body mt-1 mb-5">Imunisasi merupakan langkah pertama dan terpenting bagi anak untuk menc...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
+          </div>
+
+          {/* Item 9 */}
+          <div className="rounded-xl bg-white flex flex-col border-1 shadow-md p-4">
+            <img src="/src/assets/Rectangle 36-1.png" alt="makanan cepat saji" className="rounded-lg object-cover w-full" />
+            <p className="text-left font-poppinsSemiBold text-body mt-2">Dampak Mengkonsumsi Makanan Cepat Saji Bagi Anak</p>
+            <p className="text-left font-poppins text-body mt-1">Anak-anak suka sekali makanan cepat saji. Namun, tahukah Anda bahaya di...</p>
+            <button className="bg-[#135D66] text-white font-poppins rounded-lg py-2 px-4 mt-auto">Baca Selengkapnya</button>
           </div>
         </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </article>
   );
 };
