@@ -1,7 +1,6 @@
 import React from 'react';
+import Navbar from './Navbar';
 import Footer from './Footer';
-import OrtuNavbar from '../components/OrtuNavbar';
-
 
 function ForumDiskusi() {
   const questions1 = [
@@ -50,7 +49,7 @@ function ForumDiskusi() {
 
   return (
     <forumdiskusi>
-      <OrtuNavbar />
+      <Navbar />
     <div className="min-h-screen bg-gray-100 p-4 pb-10">
       <div className="max-w-4xl mx-auto pt-8">
         <div className="flex justify-between items-center mb-4">

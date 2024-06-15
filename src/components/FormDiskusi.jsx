@@ -1,33 +1,35 @@
 import React from 'react';
 import Footer from './Footer';
 import { Link } from "react-router-dom";
-import OrtuNavbar from '../components/OrtuNavbar';
+import Navbar from './Navbar';
 
 const FormDiskusi = () => {
   return (
-    <form>
-      <OrtuNavbar />
-    <div className="flex justify-center items-center w-full h-full">
-      <div className="bg-white p-6 w-full mx-12 my-10">
-        <h2 className="text-black text-lg mb-4 font-semibold">Judul Pertanyaan</h2>
-        <input
-          type="text"
-          className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder=""
-        />
-        <h2 className="text-gray-800 text-lg mb-2 pt-4">Tuliskan secara detail pertanyaan anda:</h2>
-        <textarea
-          className="w-full h-40 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder=""
-        ></textarea>
-        <Link to="/forumDiskusi">
-        <button className="mt-4 px-4 py-2 bg-[#135D66] text-white rounded-lg hover:bg-[#1e8896] focus:outline-none">
-          Kirim Pertanyaan
-        </button>
-        </Link>
+    <form className="flex flex-col min-h-screen">
+      <Navbar />
+      <div className="flex-grow flex items-center justify-center bg-gray-100 p-10">
+        <div className="max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-lg w-full">
+          <h2 className="text-black text-lg mb-2">Judul Pertanyaan</h2>
+          <input
+            type="text"
+            className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder=""
+          />
+          <h2 className="text-black text-lg mb-2">Tuliskan secara detail pertanyaan anda:</h2>
+          <textarea
+            className="w-full h-60 px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder=""
+          ></textarea>
+          <div className="flex justify-end">
+            <Link to="/forumDiskusi">
+              <button className="px-4 py-2 bg-[#135D66] text-white rounded-lg hover:bg-[#1e8896] focus:outline-none">
+                Kirim Pertanyaan
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </form>
   );
 };
