@@ -27,7 +27,7 @@ const Profile = () => {
                     <p><strong>Profesi:</strong> Bidan</p>
                     <p><strong>Pengalaman:</strong> 3 Tahun</p>
                     <p><strong>Peran:</strong> Memberikan layanan kesehatan ibu dan anak</p>
-                    <p><br />Ibu Laras Andini adalah seorang bidan yang memiliki pengalaman selama satu tahun dalam melayani masyarakat melalui Posyandu. Meskipun baru satu tahun dalam profesi ini, Ibu Laras telah berhasil membangun hubungan yang baik dengan masyarakat setempat. Ia dikenal sebagai sosok yang ramah, empatik, dan dapat diandalkan oleh para ibu dan keluarga yang mengandalkan layanannya. Keberadaannya di Posyandu telah menjadi tambahan berharga.</p>
+                    <p><br />Ibu Laras Andini adalah seorang bidan yang memiliki pengalaman selama satu tahun dalam melayani masyarakat melalui Posyandu. Meskipun baru satu tahun dalam profesi ini, Ibu Laras telah berhasil membangun hubungan yang baik dengan masyarakat setempat. Ia dikenal sebagai sosok yang ramah, empatik, dan dapat diandalkan oleh para ibu dan keluarga yang mengandalkan layanannya.</p>
                 </div>
             ),
         },
@@ -40,7 +40,7 @@ const Profile = () => {
                     <p><strong>Profesi:</strong> Bidan</p>
                     <p><strong>Pengalaman:</strong> 5 Tahun</p>
                     <p><strong>Peran:</strong> Memberikan layanan kesehatan ibu dan anak</p>
-                    <p><br />Ibu Wati Sucia adalah seorang bidan berpengalaman yang telah memberikan kontribusi signifikan dalam bidang kesehatan masyarakat, terutama di Posyandu, selama lima tahun terakhir. Dengan keahlian dan pengetahuan yang mendalam dalam bidang kebidanan, beliau telah menjadi pilar utama dalam meningkatkan kesehatan dan kesejahteraan masyarakat di wilayahnya. Wati Sucia dikenal karena dedikasinya yang tinggi dan komitmennya dalam memberikan layanan kesehatan terbaik kepada masyarakat.</p>
+                    <p><br />Ibu Wati Sucia adalah seorang bidan berpengalaman yang telah memberikan kontribusi signifikan dalam bidang kesehatan masyarakat, terutama di Posyandu, selama lima tahun terakhir. Dengan keahlian dan pengetahuan yang mendalam dalam bidang kebidanan, beliau telah menjadi pilar utama dalam meningkatkan kesehatan dan kesejahteraan masyarakat di wilayahnya.</p>
                 </div>
             ),
         },
@@ -53,7 +53,7 @@ const Profile = () => {
                     <p><strong>Profesi:</strong> Bidan</p>
                     <p><strong>Pengalaman:</strong> 5 Tahun</p>
                     <p><strong>Peran:</strong> Memberikan layanan kesehatan ibu dan anak</p>
-                    <p><br />Ibu Ghina Fathia adalah seorang bidan berpengalaman yang telah memberikan kontribusi luar biasa dalam bidang kesehatan masyarakat, khususnya di Posyandu, selama enam tahun terakhir. Dengan pengetahuan dan keterampilan yang mendalam dalam bidangnya, beliau telah menjadi pilar utama dalam upaya meningkatkan kesehatan dan kesejahteraan masyarakat di wilayahnya. Ghina Fathia dikenal karena dedikasinya yang tinggi dan komitmennya dalam memberikan layanan kesehatan yang optimal kepada masyarakat.</p>
+                    <p><br />Ibu Ghina Fathia adalah seorang bidan berpengalaman yang telah memberikan kontribusi luar biasa dalam bidang kesehatan masyarakat, khususnya di Posyandu, selama enam tahun terakhir. Dengan pengetahuan dan keterampilan yang mendalam dalam bidangnya, beliau telah menjadi pilar utama dalam meningkatkan kesehatan masyarakat di wilayahnya.</p>
                 </div>
             ),
         }
@@ -97,7 +97,7 @@ const Profile = () => {
             {isOpen && selectedProfile && (
                 <div className='fixed inset-0 flex items-center justify-center z-50'>
                     <div className='absolute inset-0 bg-gray-600 bg-opacity-50' onClick={closeModal}></div>
-                    <div className='relative z-50 p-5 border w-96 shadow-lg bg-white rounded-md flex'>
+                    <div className='relative z-50 p-5 border w-96 shadow-lg bg-white rounded-md flex' style={{width:'450px', height:'440px'}}>
                         <div className='mr-5 flex-shrink-0'>
                             <img className="w-32 h-32 rounded-md object-cover" src={selectedProfile.image} alt={selectedProfile.name}></img>
                         </div>
