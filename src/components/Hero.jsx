@@ -17,7 +17,7 @@ const Home = () => {
           <div className='flex justify-center md:justify-start pl-11'>
             <Link
               to='/stuntingDetection'
-              className='p-3 px-6 pt-2 text-white bg-[#135D66] rounded-md baseline hover:bg-[#3b939e]'
+              className='p-3 px-6 pt-2 text-white bg-[#135D66] rounded-[12px] baseline hover:bg-[#3b939e]'
             >
               Coba Sekarang!
             </Link>
