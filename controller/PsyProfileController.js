@@ -25,7 +25,7 @@ export const getPsyProfileById = async(req, res)=>{
 export const createPsyProfile = async(req, res)=>{
     try {
         await PsyProfile.create(req.body);
-        res.status(201).json({msg: "Info Jadwal Telah Dibuat"});
+        res.status(201).json({msg: "Info Profil Posyandu Telah Dibuat"});
     } catch (error){
         console.log(error.message);
     }
@@ -38,7 +38,7 @@ export const updatePsyProfile = async(req, res)=>{
                 id: req.params.id
             }
         });
-        res.status(200).json({msg: "Info Jadwal Telah Diupdate"});
+        res.status(200).json({msg: "Info Profil Posyandu Telah Diupdate"});
     } catch (error){
         console.log(error.message);
     }
@@ -51,7 +51,7 @@ export const deletePsyProfile = async(req, res)=>{
                 id: req.params.id
             }
         });
-        res.status(200).json({msg: "Info Jadwal Telah Dihapus"});
+        res.status(200).json({msg: "Info Profil Posyandu Telah Dihapus"});
     } catch (error){
         console.log(error.message);
     }
