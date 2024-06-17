@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PopUpStunting from "./PopUpStunting.jsx";
-import Footer from './Footer';
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const StuntingDetection = () => {
   const [prediction, setPrediction] = useState(null);
@@ -12,7 +13,6 @@ const StuntingDetection = () => {
     tinggiBadan: "",
     usia: "",
   });
-  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -60,141 +60,134 @@ const StuntingDetection = () => {
 
       const responseData = await response.json();
       setPrediction(responseData.prediction);
-      console.log(responseData);
       setIsModalOpen(true); // Open the modal upon successful prediction
     } catch (error) {
       console.error("Error:", error);
     }
   };
 
-  // useEffect(() => {
-  //   if (prediction) {
-  //     setIsModalOpen(true);
-  //   }
-  // }, [prediction]);
-
   return (
-    <stunting>
-    <Navbar />
-    <div className="min-h-screen bg-white flex flex-col items-center">
-      <main className="flex flex-col md:flex-row m-8 w-full max-w-6xl bg-white rounded-lg overflow-hidden">
-        <div className="md:w-1/2 p-6 flex items-center justify-center sm:hidden md:block">
-          <img
-            src="./src/assets/baby_img.png"
-            alt="Baby"
-            className="rounded-lg w-full h-full object-cover"
-          />
-        </div>
-        <div className="md:w-1/2 p-6">
-          <h2 className="text-2xl font-bold mb-4 text-center pb-14">
-            Stunting Detection Page
-          </h2>
-          <div className="flex justify-center items-center pb-16">
+    <>
+      <Navbar />
+      <div className="min-h-screen bg-white flex flex-col items-center">
+        <main className="flex flex-col md:flex-row m-8 w-full max-w-6xl bg-white rounded-lg overflow-hidden">
+          <div className="md:w-1/2 p-6 flex items-center justify-center sm:hidden md:block">
             <img
-              src="path/to/profile-pic.jpg"
-              alt="Admin"
-              className="w-10 h-10 rounded-full"
+              src="./src/assets/baby_img.png"
+              alt="Baby"
+              className="rounded-lg w-full h-full object-cover"
             />
-            <span className="ml-7">
-              <a href="" className="font-bold hover:text-primary underline">
-                Edit Photo
-              </a>
-            </span>
           </div>
-          <div className="bg-third rounded-xl ">
-            <form className="space-y-7 mx-8 py-8" onSubmit={handleSubmit}>
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Nama Lengkap
-                </label>
-                <input
-                  type="text"
-                  name="nama"
-                  value={inputValues.nama}
-                  onChange={handleInputChange}
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                  placeholder="Nama Lengkap Bayi"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Usia
-                </label>
-                <input
-                  type="number"
-                  name="usia"
-                  value={inputValues.usia}
-                  onChange={handleInputChange}
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                  placeholder="Usia (dalam Bulan)"
-                />
-              </div>
-              <div>
-                <span className="block text-sm font-medium text-gray-700">
-                  Jenis Kelamin
-                </span>
-                <div className="mt-1 flex space-x-4">
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="jenisKelamin"
-                      value="0" // Assign a value for male
-                      className="form-radio"
-                      checked={inputValues.jenisKelamin === "0"}
-                      onChange={handleInputChange}
-                    />
-                    <span className="ml-2">Laki-laki</span>
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-bold mb-4 text-center pb-14">
+              Stunting Detection Page
+            </h2>
+            <div className="flex justify-center items-center pb-8">
+              <img
+                src="https://placehold.co/24x24"
+                alt="Admin"
+                className="w-24 h-24 rounded-full"
+              />
+              <span className="ml-7">
+                <a href="" className="font-bold hover:text-primary underline">
+                  Edit Photo
+                </a>
+              </span>
+            </div>
+            <div className="bg-third rounded-xl ">
+              <form className="space-y-7 mx-8 py-8" onSubmit={handleSubmit}>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Nama Lengkap
                   </label>
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="jenisKelamin"
-                      value="1" // Assign a value for female
-                      className="form-radio"
-                      checked={inputValues.jenisKelamin === "1"}
-                      onChange={handleInputChange}
-                    />
-                    <span className="ml-2">Perempuan</span>
-                  </label>
+                  <input
+                    type="text"
+                    name="nama"
+                    value={inputValues.nama}
+                    onChange={handleInputChange}
+                    className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                    placeholder="Nama Lengkap Bayi"
+                  />
                 </div>
-              </div>
-              <div>
-                <span className="block text-sm font-medium text-gray-700">
-                  Apakah anak Anda lahir Prematur?
-                </span>
-                <div className="mt-1 flex space-x-4">
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="premature"
-                      className="form-radio"
-                    />
-                    <span className="ml-2">Tidak</span>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Usia
                   </label>
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="premature"
-                      className="form-radio"
-                    />
-                    <span className="ml-2">Ya</span>
-                  </label>
+                  <input
+                    type="number"
+                    name="usia"
+                    value={inputValues.usia}
+                    onChange={handleInputChange}
+                    className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                    placeholder="Usia (dalam Bulan)"
+                  />
                 </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Berat Badan Saat Ini
-                </label>
-                <input
-                  type="number"
-                  name="beratBadan"
-                  value={inputValues.beratBadan}
-                  onChange={handleInputChange}
-                  placeholder="Berat Badan Bayi (dalam kg)"
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                />
-              </div>
-              {/* <div>
+                <div>
+                  <span className="block text-sm font-medium text-gray-700">
+                    Jenis Kelamin
+                  </span>
+                  <div className="mt-1 flex space-x-4">
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="jenisKelamin"
+                        value="0" // Assign a value for male
+                        className="form-radio"
+                        checked={inputValues.jenisKelamin === "0"}
+                        onChange={handleInputChange}
+                      />
+                      <span className="ml-2">Laki-laki</span>
+                    </label>
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="jenisKelamin"
+                        value="1" // Assign a value for female
+                        className="form-radio"
+                        checked={inputValues.jenisKelamin === "1"}
+                        onChange={handleInputChange}
+                      />
+                      <span className="ml-2">Perempuan</span>
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <span className="block text-sm font-medium text-gray-700">
+                    Apakah anak Anda lahir Prematur?
+                  </span>
+                  <div className="mt-1 flex space-x-4">
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="premature"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">Tidak</span>
+                    </label>
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="premature"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">Ya</span>
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Berat Badan Saat Ini
+                  </label>
+                  <input
+                    type="number"
+                    name="beratBadan"
+                    value={inputValues.beratBadan}
+                    onChange={handleInputChange}
+                    placeholder="Berat Badan Bayi (dalam kg)"
+                    className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                  />
+                </div>
+                {/* <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Lingkar Kepala
                 </label>
@@ -204,7 +197,7 @@ const StuntingDetection = () => {
                   placeholder="Lingkar Kepala Bayi (dalam cm)"
                 />
               </div> */}
-              {/* <div>
+                {/* <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Golongan Darah
                 </label>
@@ -214,56 +207,63 @@ const StuntingDetection = () => {
                   placeholder="Golongan Darah Bayi"
                 />
               </div> */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Tinggi Badan
-                </label>
-                <input
-                  type="number"
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                  name="tinggiBadan"
-                  value={inputValues.tinggiBadan}
-                  onChange={handleInputChange}
-                  placeholder="Tinggi Badan Bayi (dalam cm)"
-                />
-              </div>
-              {/* <div>
-                <span className="block text-sm font-medium text-gray-700">
-                  Alergi
-                </span>
-                <div className="mt-1 flex space-x-4">
-                  <label className="inline-flex items-center">
-                    <input type="radio" name="allergy" className="form-radio" />
-                    <span className="ml-2">Ada</span>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Tinggi Badan
                   </label>
-                  <label className="inline-flex items-center">
-                    <input type="radio" name="allergy" className="form-radio" />
-                    <span className="ml-2">Tidak Ada</span>
-                  </label>
+                  <input
+                    type="number"
+                    className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                    name="tinggiBadan"
+                    value={inputValues.tinggiBadan}
+                    onChange={handleInputChange}
+                    placeholder="Tinggi Badan Bayi (dalam cm)"
+                  />
                 </div>
-              </div> */}
-              <button
-                type="submit"
-                className="w-full py-2 px-4 bg-primary text-white font-bold rounded-md"     
-              >
-                Lihat Hasil
-              </button>
-
-              {isModalOpen && (
-                <PopUpStunting
-                  onClose={() => setIsModalOpen(false)}
-                  inputValues={inputValues}
-                  prediction={prediction}
-                />
-              )}
-            </form>
+                <div>
+                  <span className="block text-sm font-medium text-gray-700">
+                    Alergi
+                  </span>
+                  <div className="mt-1 flex space-x-4">
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="allergy"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">Ada</span>
+                    </label>
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="allergy"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">Tidak Ada</span>
+                    </label>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full py-2 px-4 bg-primary text-white font-bold rounded-md"
+                >
+                  Lihat Hasil
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-      </main>
+          {isModalOpen && (
+            <PopUpStunting
+              onClose={() => setIsModalOpen(false)}
+              inputValues={inputValues}
+              prediction={prediction}
+            />
+          )}
+        </main>
+      
+      </div>
       <Footer />
-    </div>
-    <Footer />
-    </stunting>
+    </>
   );
 };
 
