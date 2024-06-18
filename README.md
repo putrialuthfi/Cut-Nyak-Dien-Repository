@@ -5,6 +5,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 https://putrialuthfi.github.io/Cut-Nyak-Dien-Repository/ --Link untuk preview hasil codingan
 
 Repository Backend AI: https://github.com/rendychristiann/posyandu-line-flask
+Endpoint Backend AI: posyandu-line-flask.onrender.com (refresh endpoint ini jika fitur deteksi stunting tidak running)
 
 NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
 
