@@ -1,0 +1,4 @@
+[submodule "FrontEnd"]
+  path = FrontEnd
+  url = https://github.com/putrialuthfi/Cut-Nyak-Dien-Repository.git
+
