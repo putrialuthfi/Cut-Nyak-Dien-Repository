@@ -10,7 +10,7 @@ Endpoint Backend AI: posyandu-line-flask.onrender.com (refresh endpoint ini jika
 
 NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM MELAKUKAN EDIT PADA FILE TERTENTU!
 
-## TO-DO LIST
+## FRONT-END
 
 - [x] Navbar & Footer (Rangga)
 - [x] Homepage; Landing Page, Layanan Posyandu, Profil Tenaga Kerja, Carousel Informasi Artikel, Forum Diskusi (Rangga)
@@ -38,6 +38,12 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Profil Anak (Rangga)
 - [x] Page publish forum diskusi (Rangga)
 - [x] Pop-up Profil Tenaga Kesehatan (Adisty)
+
+## BACK-END
+- [x] Login and Registration Auth (Rangga) On Progress
+- [ ] Profile Medis
+- [ ] Jadwal Posyandu
+- [ ] CRUD Jadwal Posyandu, Child Monitoring, Forum Diskusi
 
 ## HOW TO CLONE REPOSITORY
 
