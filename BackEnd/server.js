@@ -10,27 +10,41 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "signup"
-})
+    database: "db_posyandu"
+});
 
+db.connect((err) => {
+    if (err) {
+        console.error('Error connecting to database: ' + err.stack);
+        return;
+    }
+    console.log('Connected to database as id ' + db.threadId);
+});
 
-app.post('/signup', (req,res) => {
-    const sql = "INSERT INTO login (email,password) VALUES (?)";
-    const values = [
-        req.body.email,
-        req.body.password
-    ]
+app.post('/users', (req,res) => {
+    const { email, password, confirm } = req.body; // Destructure values from req.body
 
-    db.query(sql, [values], (err, data) => {
+    // Ensure all required fields are present
+    if (!email || !password || !confirm) {
+        return res.status(400).json({ message: "All fields are required" });
+    }
+
+    // SQL query corrected with placeholders
+    const sql = "INSERT INTO users (email, password, confirm) VALUES (?, ?, ?)";
+    const values = [email, password, confirm];
+
+    db.query(sql, values, (err, result) => {
         if(err) {
-            return res.json(err);
+            console.error('Error executing query: ' + err.stack);
+            return res.status(500).json({ message: "Database error" });
         }
-        return res.json("Error");
-        
-    })
-    return res.json(data);
-})
+        console.log("New user added: ", result.insertId);
+        return res.status(201).json({ message: "User added successfully", userId: result.insertId });
+    });
+});
 
-app.listen(8081, ()=>{
-    console.log("listening");
-})
+
+const PORT = process.env.PORT || 8081;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});

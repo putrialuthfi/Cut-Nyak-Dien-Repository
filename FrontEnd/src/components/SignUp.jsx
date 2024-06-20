@@ -26,7 +26,7 @@ function SignUp() {
     const err = Validation(values);
     setErrors(err);
     if(err.email === "" && err.password === "") {
-        axios.post('http://localhost:8081/signup', values)
+        axios.post('http://localhost:8081/users', values)
         .then(res => {
             navigate('/signIn');
         })
@@ -81,6 +81,7 @@ function ParentForm({ handleInput, handleSubmit, errors }) {
           type="email"
           id="email"
           name="email"
+          required
           placeholder="Email"
           onChange={handleInput}
           className="border border-gray-400 rounded p-4"
@@ -95,6 +96,7 @@ function ParentForm({ handleInput, handleSubmit, errors }) {
           type="password"
           id="password"
           name="password"
+          required
           placeholder="Kata Sandi"
           onChange={handleInput}
           className="border border-gray-400 rounded p-4"
@@ -108,6 +110,7 @@ function ParentForm({ handleInput, handleSubmit, errors }) {
         <input
           type="password"
           id="confirm"
+          required
           name="confirm"
           placeholder="Konfirmasi Ulang Kata Sandi"
           onChange={handleInput}

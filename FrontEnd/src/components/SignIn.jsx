@@ -69,6 +69,7 @@ function ParentForm({ handleInput, handleSubmit, errors }) {
           id="email"
           name="email"
           placeholder="Email"
+          required
           onChange={handleInput}
           className="border border-gray-400 rounded p-4"
           style={{ width: '65vh', height: '7vh' }}
@@ -82,6 +83,7 @@ function ParentForm({ handleInput, handleSubmit, errors }) {
           type="password"
           id="password"
           name="password"
+          required
           placeholder="Kata Sandi"
           onChange={handleInput}
           className="border border-gray-400 rounded p-4"
