@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePic from '../assets/jimmy.png';
-import Footer from './Footer';
-import OrtuNavbar from './OrtuNavbar';
+import Footer from '../components/Footer';
+import OrtuNavbar from '../components/OrtuNavbar';
 
 const ChildMonitoringRecord = () => {
   const records = [

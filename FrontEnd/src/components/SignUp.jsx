@@ -1,10 +1,39 @@
 import React, { useState } from 'react';
-import Button from './ButtonSignUp';
+import Button from '../components/ButtonSignUp';
 import image from '../assets/img-signup.png';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Validation from './auth/RegisterAuth';
+import axios from 'axios';
 
 function SignUp() {
   const [formType, setFormType] = useState('parent'); // 'parent' or 'admin'
+  
+  const [values, setValues] = useState({
+    email: '',
+    password: '',
+    confirm: ''
+  });
+
+  const navigate = useNavigate();
+  const [errors, setErrors] = useState({});
+
+  const handleInput = (event) => {
+    setValues(prev => ({ ...prev, [event.target.name]: event.target.value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const err = Validation(values);
+    setErrors(err);
+    if(err.email === "" && err.password === "") {
+        axios.post('http://localhost:8081/signup', values)
+        .then(res => {
+            navigate('/signIn');
+        })
+        .catch(err => console.log(err));
+    }
+  };
+
 
   return (
     <div className="flex h-screen flex-wrap box-border">
@@ -23,22 +52,12 @@ function SignUp() {
 
         {/* Form */}
         {formType === 'parent' ? (
-          <ParentForm />
+          <ParentForm handleInput={handleInput} handleSubmit={handleSubmit} errors={errors} />
         ) : (
-          <AdminForm />
+          <AdminForm handleInput={handleInput} handleSubmit={handleSubmit} errors={errors} />
         )}
 
         {/* Button */}
-        <a href="/signUp">
-          <div className="w-[65vh] items-center m-2">
-            <button
-              type="button"
-              className="w-full border p-2.5 bg-[#135D66] text-white rounded-md font-semibold mb-2"
-            >
-              Daftar
-            </button>
-          </div>
-        </a>
 
         <footer className="w-full text-center text-primary text-[14px] mt-4">
           <p>Sudah Punya Akun? 
@@ -52,42 +71,61 @@ function SignUp() {
   );
 }
 
-function ParentForm() {
+function ParentForm({ handleInput, handleSubmit, errors }) {
   return (
     <div className="w-full flex flex-col items-center justify-center mb-4">
-      <form action="" className="w-full max-w-md flex flex-col items-center">
+      <form onSubmit={handleSubmit} className="w-full max-w-md flex flex-col items-center">
+        <div className='mb-3'>
         <label htmlFor="email" className="sr-only">Email</label>
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Email"
-          required
-          className="border border-gray-400 rounded p-4 mb-4"
+          onChange={handleInput}
+          className="border border-gray-400 rounded p-4"
           style={{width:'65vh', height: '7vh'}}
         />
+        {errors.email && <span className='text-red-500'> {errors.email}</span>}
+        </div>
 
+        <div className='mb-3'>
         <label htmlFor="password" className="sr-only">Kata Sandi</label>
         <input
           type="password"
           id="password"
           name="password"
           placeholder="Kata Sandi"
-          required
-          className="border border-gray-400 rounded p-4 mb-4"
+          onChange={handleInput}
+          className="border border-gray-400 rounded p-4"
           style={{width:'65vh', height: '7vh'}}
         />
+        {errors.password && <span className='text-red-500'> {errors.password}</span>}
+        </div>
 
-        <label htmlFor="confirmpassword" className="sr-only">Konfirmasi Ulang Kata Sandi</label>
+        <div className='mb-3'>
+        <label htmlFor="confirm" className="sr-only">Konfirmasi Ulang Kata Sandi</label>
         <input
           type="password"
-          id="confirmpassword"
-          name="confirmpassword"
+          id="confirm"
+          name="confirm"
           placeholder="Konfirmasi Ulang Kata Sandi"
-          required
-          className="border border-gray-400 rounded p-4 mb-4"
+          onChange={handleInput}
+          className="border border-gray-400 rounded p-4"
           style={{width:'65vh', height: '7vh'}}
         />
+        {errors.confirm && <span className='text-red-500'> {errors.confirm}</span>}
+        </div>
+
+          <div className="w-[65vh] items-center m-2">
+            <button
+              type="submit"
+              value="signup"
+              className="w-full border p-2.5 bg-[#135D66] text-white rounded-md font-semibold mb-2"
+            >
+              Daftar
+            </button>
+          </div>
       </form>
     </div>
   );
@@ -129,11 +167,11 @@ function AdminForm() {
           style={{width:'65vh', height: '7vh'}}
         />
 
-        <label htmlFor="confirmpassword" className="sr-only">Konfirmasi Ulang Kata Sandi</label>
+        <label htmlFor="confirm" className="sr-only">Konfirmasi Ulang Kata Sandi</label>
         <input
           type="password"
-          id="confirmpassword"
-          name="confirmpassword"
+          id="confirm"
+          name="confirm"
           placeholder="Konfirmasi Ulang Kata Sandi"
           required
           className="border border-gray-400 rounded p-4 mb-4"

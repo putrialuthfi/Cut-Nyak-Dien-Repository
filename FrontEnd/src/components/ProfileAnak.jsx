@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import OrtuNavbar from './OrtuNavbar';
-import Footer from './Footer';
+import OrtuNavbar from '../components/OrtuNavbar';
+import Footer from '../components/Footer';
 
 const ProfileAnak = () => {
   const [name, setName] = useState('');
