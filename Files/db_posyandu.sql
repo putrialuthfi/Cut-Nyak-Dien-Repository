@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Jun 2024 pada 19.09
+-- Waktu pembuatan: 21 Jun 2024 pada 05.01
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -18,38 +18,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `notes_db`
+-- Database: `db_posyandu`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `notes`
+-- Struktur dari tabel `users`
 --
 
-CREATE TABLE `notes` (
-  `id` bigint(20) NOT NULL,
-  `title` text NOT NULL,
-  `datetime` datetime NOT NULL,
-  `note` longtext NOT NULL
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `email` varchar(40) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `confirm` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `notes`
+-- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `notes` (`id`, `title`, `datetime`, `note`) VALUES
-(1, 'catatan 1', '2024-07-20 00:00:00', 'test ubah notes'),
-(2, 'catatan 2', '2024-07-20 00:00:00', 'test ubah notes 2');
+INSERT INTO `users` (`id`, `email`, `password`, `confirm`) VALUES
+(1, 'irbarangga@gmail.com', 'test123', 'test123'),
+(2, 'rangga@gmail.com', '12345', '12345');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `notes`
+-- Indeks untuk tabel `users`
 --
-ALTER TABLE `notes`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -57,10 +57,10 @@ ALTER TABLE `notes`
 --
 
 --
--- AUTO_INCREMENT untuk tabel `notes`
+-- AUTO_INCREMENT untuk tabel `users`
 --
-ALTER TABLE `notes`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
