@@ -41,7 +41,9 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 
 ## BACK-END
 - [x] Login and Registration Auth (Rangga) On Progress
-- [ ] CRUD (MySQL ke BE) Jadwal Posyandu, Stunting Detection, Child Monitoring, Forum Diskusi (Luthfi) On Progress
+- [x] CRUD (MySQL ke BE) Jadwal Posyandu, Stunting Detection, Child Monitoring, Forum Diskusi (Luthfi)
+- [ ] CRUD (BE ke FE) Jadwal Posyandu, Stunting Detection, Child Monitoring, Forum Diskusi (Luthfi) On Progress
+
 
 ## HOW TO CLONE REPOSITORY
 
