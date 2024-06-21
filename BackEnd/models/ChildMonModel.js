@@ -26,7 +26,8 @@ const ChildMon = db.define('childmons', {
         allowNull: false,
     },
 }, {
-    freezeTableName:true
+    freezeTableName:true,
+    timestamps: false
 });
 
 export default ChildMon;

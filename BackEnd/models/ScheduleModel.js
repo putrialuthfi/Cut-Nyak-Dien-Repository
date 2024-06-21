@@ -26,7 +26,8 @@ const Schedule = db.define('schedules', {
         allowNull: false,
     },
 }, {
-    freezeTableName:true
+    freezeTableName:true,
+    timestamps: false
 });
 
 export default Schedule;

@@ -42,7 +42,8 @@ const Stunting = db.define('stunting', {
         allowNull: false,
     },
 }, {
-    freezeTableName:true
+    freezeTableName:true,
+    timestamps: false
 });
 
 export default Stunting;

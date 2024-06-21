@@ -22,7 +22,8 @@ const PsyProfile = db.define('psyprofile', {
         allowNull: false,
     },
 }, {
-    freezeTableName:true
+    freezeTableName:true,
+    timestamps: false
 });
 
 export default PsyProfile;

@@ -10,7 +10,8 @@ const PpChild = db.define('ppchilds', {
         allowNull: false,
     },
 }, {
-    freezeTableName:true
+    freezeTableName:true,
+    timestamps: false
 });
 
 export default PpChild;
