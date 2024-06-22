@@ -46,7 +46,7 @@ export default function App() {
 
         {/* Section: Contact */}
         <div className="w-full md:w-1/3 lg:w-1/">
-          <h6 className="font-bold text-[18px] mb-2">Contact</h6>
+          <h6 className="font-bold text-[18px] mb-2">Kontak</h6>
           <ul>
             <li className="mb-2 flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-whatsapp mr-2" viewBox="0 0 16 16">
