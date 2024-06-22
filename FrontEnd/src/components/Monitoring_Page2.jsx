@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Navbar from './Navbar';
+import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
 
 const Monitoring2 = () => {
   return (
     <monitoring2>
-      <Navbar />
+    <Navbar />
     <div className="w-full h-full flex justify-center items-center py-4 px-10">
       <div className="bg-white p-6 w-full ">
         <h1 className="text-xl font-bold mb-5 text-center">Child Monitoring Record</h1>
@@ -17,7 +17,7 @@ const Monitoring2 = () => {
         <table className="min-w-full bg-[white] border border-gray-300">
           <thead>
             <tr>
-              <th className="py-5 px-4 border-b text-white bg-[#135D66]">Tanggal Vaksin</th>
+              <th className="py-5 px-4 border-b text-white bg-[#135D66]">Tanggal Imunisasi</th>
               <th className="py-5 px-4 border-b text-white bg-[#135D66]">Vaksin yang Sudah Diberikan</th>
               <th className="py-5 px-4 border-b text-white bg-[#135D66]">Keterangan</th>
             </tr>

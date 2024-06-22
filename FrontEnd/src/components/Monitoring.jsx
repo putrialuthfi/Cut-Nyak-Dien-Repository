@@ -1,9 +1,9 @@
 import React from 'react';
 import profilePic from '../assets/jimmy.png';
+import Navbar from './Navbar';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
-const ChildMonitoringRecord = () => {
+const Monitoring = () => {
   const records = [
     { id: 1, name: 'Jiemmy 0 Bulan' },
     { id: 2, name: 'Jiemmy 1 Bulan' },
@@ -15,7 +15,7 @@ const ChildMonitoringRecord = () => {
       <Navbar />
     <div className="w-full h-full flex flex-col items-center bg-gray-100 py-10">
       <div className="text-2xl font-bold mb-8">Child Monitoring Record</div>
-      <div className="space-y-4 w-full max-w-screen-xl">
+      <div className="space-y-4 w-3/4 mx-auto max-w-screen-xl">
         {records.map((record) => (
           <div key={record.id} className="flex items-center justify-between p-4 border rounded-lg bg-white shadow">
             <div className="flex items-center space-x-4">
@@ -46,4 +46,4 @@ const ChildMonitoringRecord = () => {
   );
 };
 
-export default ChildMonitoringRecord;
+export default Monitoring;
