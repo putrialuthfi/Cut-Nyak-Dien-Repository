@@ -1,4 +1,7 @@
+// const Stunting = require("../models/StuntingModel.js");
 import Stunting from "../models/StuntingModel.js";
+// import database from '../config/database.js';
+
 
 export const getStuntings = async(req, res)=>{
     try {
