@@ -1,12 +1,42 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mainDropdownOpen, setMainDropdownOpen] = useState(false); // State for main navigation dropdown
+  const [sidebarDropdownOpen, setSidebarDropdownOpen] = useState(false); // State for sidebar dropdown
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false); // State to manage authentication
+  const navigate = useNavigate();
 
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
+  useEffect(() => {
+    // Check if user is authenticated
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user && user.email) {
+      setAuthenticated(true);
+    } else {
+      setAuthenticated(false);
+    }
+  }, []);
+
+  const logout = () => {
+    localStorage.clear();
+    navigate('/');
+  };
+
+  const handleMainDropdownToggle = () => {
+    setMainDropdownOpen(!mainDropdownOpen);
+    // Close sidebar dropdown if open
+    if (sidebarDropdownOpen) {
+      setSidebarDropdownOpen(false);
+    }
+  };
+
+  const handleSidebarDropdownToggle = () => {
+    setSidebarDropdownOpen(!sidebarDropdownOpen);
+    // Close main dropdown if open
+    if (mainDropdownOpen) {
+      setMainDropdownOpen(false);
+    }
   };
 
   const handleSidebarToggle = () => {
@@ -14,24 +44,15 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    setDropdownOpen(false);
+    setMainDropdownOpen(false);
+    setSidebarDropdownOpen(false);
     setSidebarOpen(false);
   };
 
-  // Menutup dropdown jika diklik di luar elemen dropdown
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (!event.target.closest(".dropdown-menu") && !event.target.closest(".dropdown-button")) {
-        setDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener("click", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, []);
+  const closeDropdowns = () => {
+    setMainDropdownOpen(false);
+    setSidebarDropdownOpen(false);
+  };
 
   return (
     <nav className="w-full h-full relative py-3 md:px-10 px-7 bg-[#135D66]">
@@ -52,15 +73,15 @@ const Navbar = () => {
           </button>
         </div>
         {/* Item Menu di Desktop */}
-        <div className="hidden space-x-6 md:flex text-white font-regular">
+        <div className="hidden items-center space-x-6 md:flex text-white font-regular">
           <Link to="/" className="hover:text-darkGrayishBlue">
             Beranda
           </Link>
           <div className="relative">
-            <button onClick={handleDropdownToggle} className="hover:text-darkGrayishBlue dropdown-button">
+            <button onClick={handleMainDropdownToggle} className="hover:text-darkGrayishBlue dropdown-button">
               Layanan
             </button>
-            {dropdownOpen && (
+            {mainDropdownOpen && (
               <div className="absolute bg-white text-black mt-2 py-2 w-48 shadow-lg dropdown-menu">
                 <Link to="/InformasiPosyandu" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Informasi Posyandu
@@ -68,7 +89,7 @@ const Navbar = () => {
                 <Link to="/stuntingDetection" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Stunting Detection
                 </Link>
-                <Link to="/signIn" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
+                <Link to="/monitoring" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-gray-200">
                   Monitoring Record
                 </Link>
               </div>
@@ -80,9 +101,45 @@ const Navbar = () => {
           <Link to="/aboutUs" className="hover:text-darkGrayishBlue">
             Tentang Kami
           </Link>
-          <Link to="/signIn" className="hover:text-darkGrayishBlue">
-            Masuk ke Akun
-          </Link>
+          {authenticated ? (
+            <div className="flex items-center bg-white rounded-xl py-1">
+              <button
+                type="button"
+                className=""
+                onClick={handleSidebarDropdownToggle}
+              >
+                <span className="text-[#135D66] font-semibold px-4 text-nowrap">Halo, Anggita</span>
+              </button>
+              {sidebarDropdownOpen && (
+                <div className="absolute mt-[130px] py-2 w-40 rounded-lg shadow-lg bg-white">
+                  <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <li>
+                      <a
+                        href="/profileOrtu"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        onClick={closeDropdowns}
+                      >
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        onClick={logout}
+                      >
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          ) : (
+            <Link to="/signIn" className="hover:text-darkGrayishBlue">
+              Masuk ke Akun
+            </Link>
+          )}
         </div>
       </div>
       {/* Sidebar untuk Mobile */}
@@ -104,10 +161,10 @@ const Navbar = () => {
             Beranda
           </Link>
           <div className="relative">
-            <button onClick={handleDropdownToggle} className="block w-full text-left py-2 text-black hover:bg-gray-200 dropdown-button">
+            <button onClick={handleSidebarDropdownToggle} className="block w-full text-left py-2 text-black hover:bg-gray-200 dropdown-button">
               Layanan
             </button>
-            {dropdownOpen && (
+            {sidebarDropdownOpen && (
               <div className="pl-4">
                 <Link to="/InformasiPosyandu" onClick={handleLinkClick} className="block py-2 text-black hover:bg-gray-200">
                   Informasi Posyandu
@@ -115,7 +172,7 @@ const Navbar = () => {
                 <Link to="/stuntingDetection" onClick={handleLinkClick} className="block py-2 text-black hover:bg-gray-200">
                   Stunting Detection
                 </Link>
-                <Link to="/signIn" onClick={handleLinkClick} className="block py-2 text-black hover:bg-gray-200">
+                <Link to="/monitoring" onClick={handleLinkClick} className="block py-2 text-black hover:bg-gray-200">
                   Monitoring Record
                 </Link>
               </div>
@@ -127,9 +184,45 @@ const Navbar = () => {
           <Link to="/aboutUs" onClick={handleLinkClick} className="block py-2 text-black hover:bg-gray-200">
             Tentang Kami
           </Link>
-          <Link to="/signIn" onClick={handleLinkClick} className="block py-2 text-black hover:bg-gray-200">
-            Masuk ke Akun
-          </Link>
+          {authenticated ? (
+            <div className="flex items-center bg-white rounded-xl py-1">
+              <button
+                type="button"
+                className=""
+                onClick={handleSidebarDropdownToggle}
+              >
+                <span className="text-[#135D66] font-semibold px-4 text-nowrap">Halo, Anggita</span>
+              </button>
+              {sidebarDropdownOpen && (
+                <div className="absolute mt-[130px] py-2 w-40 rounded-lg shadow-lg bg-white">
+                  <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <li>
+                      <a
+                        href="/profileOrtu"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        onClick={closeDropdowns}
+                      >
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        onClick={logout}
+                      >
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          ) : (
+            <Link to="/signIn" className="block py-2 text-black hover:bg-gray-200">
+              Masuk ke Akun
+            </Link>
+          )}
         </div>
       </div>
     </nav>

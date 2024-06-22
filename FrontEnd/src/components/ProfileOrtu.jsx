@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import OrtuNavbar from '../components/OrtuNavbar';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ProfileOrtu = () => {
@@ -25,7 +25,7 @@ const ProfileOrtu = () => {
 
   return (
     <profile>
-        <OrtuNavbar />
+        <Navbar />
     <div className="w-full h-full mx-auto p-8 px-[80px]">
         <div className='flex flex-col md:flex-row items-center justify-between mb-10'>
         <p>

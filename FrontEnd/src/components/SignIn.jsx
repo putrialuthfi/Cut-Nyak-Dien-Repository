@@ -1,24 +1,53 @@
 import React, { useState } from 'react';
 import Button from '../components/ButtonSignIn';
 import image from '../assets/img-signin.jpg';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Validation from './auth/LoginAuth';
 
 function SignIn() {
-  const [formType, setFormType] = useState('parent'); // 'parent' or 'admin'
+  const [formType, setFormType] = useState('parent'); // 'parent' <o></o>r 'admin'
   const [values, setValues] = useState({
     email: '',
     password: ''
   });
   const [errors, setErrors] = useState({});
 
+  const navigate = useNavigate();
   const handleInput = (event) => {
     setValues(prev => ({ ...prev, [event.target.name]: event.target.value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setErrors(Validation(values));
+    const validationErrors = Validation(values);
+    setErrors(validationErrors);
+  
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        const response = await fetch('http://localhost:8081/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(values)
+        });
+  
+        const result = await response.json();
+  
+        if (response.ok) {
+          // Save user details to localStorage
+          localStorage.setItem('user', JSON.stringify(result.user));
+  
+          // Redirect to home page or any other desired route
+          navigate('/');
+        } else {
+          console.log(result.message || 'Login failed');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        console.log('Login failed');
+      }
+    }
   };
 
   return (
@@ -44,7 +73,6 @@ function SignIn() {
         )}
 
         {/* Button */}
-
 
         <footer className="w-full text-center text-primary text-[14px] mt-4">
           <p>Belum Punya Akun?
@@ -91,6 +119,7 @@ function ParentForm({ handleInput, handleSubmit, errors }) {
         />
         {errors.password && <span className='text-red-500 mb-4'> {errors.password}</span>}
         </div>
+
         <div className="w-[65vh] items-center mt-4 mb-2">
             <button
               type="submit"

@@ -1,33 +1,36 @@
-function Validation(values){
-    alert("")
-    let error = {}
-    const email_pattern =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    const password_pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{5,}$/
-
-    if(values.email === "") {
-        error.email = "Name shouldn't be empty!"
+function Validation(values) {
+    let errors = {};
+    const email_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const password_pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~!@#$%^&*()_+])[A-Za-z\d~!@#$%^&*()_+]{8,}$/;
+  
+    // Email validation
+    if (values.email.trim() === "") {
+        errors.email = "Email should not be empty!";
+    } else if (!email_pattern.test(values.email)) {
+        errors.email = "Invalid email format";
+    } else {
+        errors.email = "";
     }
-    else{
-        error.email = ""
+  
+    // Password validation
+    if (values.password.trim() === "") {
+        errors.password = "Password should not be empty!";
+    } else if (!password_pattern.test(values.password)) {
+        errors.password = "Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one special symbol ~!@#$%^&*()_+";
+    } else {
+        errors.password = "";
     }
-
-    if(values.password === "") {
-        error.password = "Password shouldn't be empty!"
+  
+    // Confirm password validation
+    if (values.confirm.trim() === "") {
+        errors.confirm = "Confirm Password should not be empty!";
+    } else if (values.password !== values.confirm) {
+        errors.confirm = "Passwords do not match!";
+    } else {
+        errors.confirm = "";
     }
-    else{
-        error.password = ""
-    }
-
-    if(values.confirm === "") {
-        error.confirm = "Password shouldn't be empty!"
-    }
-    else if(values.password !== values.confirm) {
-        error.confirm = "Password and confirm password should be the same!"
-    }
-    else{
-        error.confirm = ""
-    }
-    return error;
+  
+    return errors;
 }
 
 export default Validation;
