@@ -22,6 +22,7 @@ import OrtuHome from './components/OrtuHome';
 import ProfileOrtu from './components/ProfileOrtu';
 import ProfileAnak from './components/ProfileAnak';
 import ProfileAdmin from './components/ProfileAdmin';
+import Article_Page2 from './components/Article_Page2';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/profileOrtu" element={<ProfileOrtu />} />
         <Route path="/profileAnak" element={<ProfileAnak />} />
         <Route path="/profileAdmin" element={<ProfileAdmin />} />
+        <Route path="/article/:articleId" element={<Article_Page2 />} />
       </Routes>
     </Router>
   );
