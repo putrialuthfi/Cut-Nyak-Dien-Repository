@@ -20,7 +20,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Stunting Detection Page (Rendy)
 - [x] Popup Stunting Detection (Rendy) 
 - [x] Article Page 1 (Wildan)
-- [ ] Article Page 2 (Wildan) *backup Riska
+- [x] Article Page 2 (Adisty)
 - [x] Tentang Kami (Rangga)
 - [x] Sign In Page (Riska)
 - [x] Sign Up Page (Luthfi)
