@@ -40,7 +40,7 @@ NOTE: HARAP DIPERHATIKAN UNTUK SELALU PULL REPOSITORY TERLEBIH DAHULU SEBELUM ME
 - [x] Pop-up Profil Tenaga Kesehatan (Adisty)
 
 ## BACK-END
-- [x] Login and Registration Auth (Rangga) On Progress
+- [x] Login and Registration Auth (Rangga)
 - [x] CRUD (MySQL ke BE) Jadwal Posyandu, Stunting Detection, Child Monitoring, Forum Diskusi ``(Luthfi)``
 - [ ] CRUD (BE ke FE) ``(Luthfi)``
 1. Informasi Posyandu ✅
